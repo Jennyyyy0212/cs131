@@ -1,0 +1,6 @@
+    1  passwd
+    2  wget www.github.com
+    3  pwd
+    4  git init
+    5  wget www.github.com
+    6  history > cmds.log
