@@ -1,0 +1,4 @@
+Line numbers in verified reviews: 1439
+Word counts in verified reviews: 588540
+Line numbers in unverified reviews: 99
+Word counts in unverified reviews: 43387
