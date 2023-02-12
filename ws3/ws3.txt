@@ -1,0 +1,11 @@
+Top 3 customer ID with the most reviews:
+Number of reviews	Cusomer ID	 
+1.          21922       50122160
+2.           9964       50732546
+3.           2664       52615377
+
+Tope 3 product ID with the most reviews:
+Number of reviews	Product ID
+1.           4625       043935806X
+2.           3739       0439139597
+3.           2666       0525947647
