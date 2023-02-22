@@ -4,7 +4,7 @@ Number of reviews	Cusomer ID
 2.           9964       50732546
 3.           2664       52615377
 
-Tope 3 product ID with the most reviews:
+Top 3 product ID with the most reviews:
 Number of reviews	Product ID
 1.           4625       043935806X
 2.           3739       0439139597
