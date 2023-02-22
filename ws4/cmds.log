@@ -311,7 +311,6 @@
   311  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > CUSTOMERS/50732546.txt
   312  cat CUSTOMERS/50732546.txt
   313  less CUSTOMERS/50732546.txt
-  314* grep "^0001055178" amazon_reviews_us_Books_v1_02.tsv | cut -f8,9 > PRODUCTS/0001055178.txt
   315  grep "60875410" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > PRODUCTS/60875410.txt
   316  cat PRODUCTS/60875410.txt
   317  grep "60875410" amazon_reviews_us_Books_v1_02.tsv | cut -f 9,10 > PRODUCTS/60875410.txt
