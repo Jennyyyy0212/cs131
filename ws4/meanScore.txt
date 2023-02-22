@@ -1,0 +1,2 @@
+Mean score of helpfulness in cusomer ID(50732546): 74.2919 out of 100
+Mean score of helpfulness in product ID(60875410): 48.6767 out of 100
