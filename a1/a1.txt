@@ -1,0 +1,221 @@
+Script started on 2023-02-24 20:42:05-05:00
+1) make a dictionary under home dir
+bash-4.4$ mkdir a1
+bash-4.4$ ls
+a1  a1.txt  ws1  ws2  ws3  ws4
+//make sure under the dic cs131
+
+2) find the home dir 
+Command: 
+bash-4.4$ echo cd ~
+or
+bash-4.4$ echo $HOME
+Path for home dir: 
+cd /mnt/scratch/an-chieh23sp
+/mnt/scratch/an-chieh23sp
+
+3) find the UID
+Command:
+bash-4.4$ id
+My UID:
+uid=1067(an-chieh23sp) gid=1069(an-chieh23sp) groups=1069(an-chieh23sp)
+
+4) Create new dir "temp" and remove exeute permission
+Command:
+bash-4.4$ mkdir temp
+bash-4.4$ chmod u-x temp
+bash-4.4$ cd temp
+bash: cd: temp: Permission denied
+bash-4.4$ ls
+temp
+bash-4.4$ ls -l temp
+total 0
+bash-4.4$ temp/test.txt
+bash: temp/test.txt: Permission denied
+bash-4.4$ touch temp/test.txt
+touch: cannot touch 'temp/test.txt': Permission denied
+Conclusion: 
+a) No, I'm not allowed to enter(cd) the temp dir
+b) Yes, I can use 'ls' to read the temp dir
+c) Yes, I can use 'ls -l' to read the info of the temp dir
+d) No, I can't add a file in the temp dir 
+
+5)creat a new dic "temp2" 
+Command:
+bash-4.4$ mkdir temp2
+bash-4.4$ ls
+temp  temp2
+bash-4.4$ cd temp2
+bash-4.4$ touch testFile.txt
+bash-4.4$ ls
+testFile.txt
+bash-4.4$ cd ..
+bash-4.4$ mv temp2 temp3
+bash-4.4$ ls
+temp  temp3
+bash-4.4$ cd temp3
+bash-4.4$ ls
+testFile.txt
+bash-4.4$ cd ..
+bash-4.4$ cp -r temp3 temp4
+bash-4.4$ ls
+temp  temp3  temp4
+bash-4.4$ cd temp4
+bash-4.4$ ls
+testFile.txt
+bash-4.4$ cd ..
+
+Conclusion:
+a) Yes, I'm allowed to move the dir from temp2 to temp3. But because
+temp3 didn't exist before, temp2 is replaced by temp2. And the file inside
+temp2 will be the same as temp3. So technically, 'mv' is just used to rename
+the dir temp2 for a new name.
+b) Yes, I can copy the dir temp3 to dir temp4 by using 'cp -r' and the file
+inside of dir temp4 is the same as temp3. But I can't use only 'cp' to copy a dir.
+
+6)find the info about the memory and CPU 
+Command:
+bash-4.4$ ls /proc/ | grep mem
+iomem
+meminfo
+bash-4.4$ ls /proc/ | grep cpu
+cpuinfo
+
+Conclusion:
+a)The files contains the info about memory are iomem and meminfo.
+b)The files contains the info about CPU is cpuinfo.
+
+7)Use head to check the memory info
+Command:
+bash-4.4$ head /proc/meminfo
+MemTotal:       73080640 kB
+MemFree:         6316032 kB
+MemAvailable:   11277056 kB
+Buffers:          473472 kB
+Cached:          8778304 kB
+SwapCached:       105216 kB
+Active:          7108416 kB
+Inactive:        2782720 kB
+Active(anon):    2638080 kB
+Inactive(anon):  1694464 kB
+bash-4.4$ head /proc/meminfo[K[K[K[K[K[K[Kiomem
+00000000-00000000 : System RAM
+00000000-00000000 : System RAM
+
+Conclusion: 
+The total memory on my server is 73080640 kB.
+
+8)Use head, tail, cat to check the info about CPU
+Command:
+bash-4.4$ head /proc/cpuinfo
+processor	: 0
+cpu		: POWER8 (architected), altivec supported
+clock		: 3525.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 1
+cpu		: POWER8 (architected), altivec supported
+clock		: 3525.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+bash-4.4$ tail /proc/cpuinfo
+processor	: 255
+cpu		: POWER8 (architected), altivec supported
+clock		: 3525.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+timebase	: 512000000
+platform	: pSeries
+model		: IBM,8286-42A
+machine		: CHRP IBM,8286-42A
+MMU		: Hash
+bash-4.4$ cat /proc/cpuinfo | grep processor | wc -l
+256
+bash-4.4$ tail /proc/cpuinfo | grep "MHz"
+clock		: 3525.000000MHz
+bash-4.4$ head /proc/cpuinfo
+processor	: 0
+cpu		: POWER8 (architected), altivec supported
+clock		: 3525.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+processor	: 1
+cpu		: POWER8 (architected), altivec supported
+clock		: 3525.000000MHz
+revision	: 2.1 (pvr 004b 0201)
+
+bash-4.4$ head /proc/cpuinfo | grep "architected"
+cpu		: POWER8 (architected), altivec supported
+cpu		: POWER8 (architected), altivec supported
+
+Conclusion:
+a)I had 256 processors in my server.
+b)The processor name is POWER8.
+c)The processor speed is 3525.000000MHz, which is also 3.525 GHz.
+
+9)copy the file into a1 dir
+Command:
+bash-4.4$ cp /home/test/A1/downloaded_hashtags_extend.csv ~/cs131/a1/twitter.txt
+bash-4.4$ ls
+a1.txt  temp  temp3  temp4  twitter.csv
+bash-4.4$ wc -l twitter.csv
+110350 twitter.csv
+bash-4.4$ du -h -s twitter.csv
+7.5M	twitter.csv
+bash-4.4$ ls -lh twitter.csv
+-rw-r--r-- 1 an-chieh23sp an-chieh23sp 7.5M Feb 24 21:32 twitter.csv
+
+Conclusion:
+a) The size of the dataset is 7.5MB, which is also 0.0075 GB.
+b) There has 110350 in the dataset.
+
+10) search the file for case-insensitive
+Command:
+bash-4.4$ grep -i "great" twitter.csv | wc -l
+57
+
+Conclusion:
+There has 57 times of case-insensitive word "great" in the dataset.
+
+11)use file to check the character encoding for the dataset
+Command: 
+bash-4.4$ file twitter.csv
+twitter.csv: UTF-8 Unicode text
+
+Conclusion:
+The encoding is UTF-8.
+
+12)use iconv to convert the character encoding for the dataset
+Command:
+bash-4.4$ iconv -f UTF-8 -t ASCII twitter.csv > twitter_changed.csv
+iconv: illegal input sequence at position 41776
+bash-4.4$ ls
+a12.txt  temp	temp4		     twitter.csv
+a1.txt	 temp3	twitter_changed.csv  typescript
+bash-4.4$ file twitter_changed.csv 
+twitter_changed.csv: ASCII text
+
+Conclusion:
+Successfully changed the encoding from UTF-8 to ASCII.
+
+13)check the column names in dataset
+Command:
+bash-4.4$ head -n 1 twitter.csv
+author,hashtags,date,id
+bash-4.4$ head -n 2 twitter.csv 
+author,hashtags,date,id
+308045021,awesomepeopleontwitter,2022-04-30 23:18:45+00:00,1520543208614334465
+bash-4.4$ ask 0[K-F'','[C ''{'}'p}'r}'i}'n}'
+bash-4.4$ ask -F',' '{print $1}' twitter.csv | sort | uniq | wc -l 
+177
+bash-4.4$ awk -F',' '{print $NF}' twitter.csv | sort | uniq | wc -l
+64698
+bash-4.4$ awk -F',' '{print $2}' twitter.csv | sort | uniq | wc -l
+20258
+bash-4.4$ awk -F',' '{print $2}' twitter.csv | sort -u | wc -l
+20258
+
+Conclusion:
+a) There are 177 unique users.
+b) There are 64698 unique tweets.
+c) There are 20258 unique hashtags. The number of unique hashtags is less than the unique tweets.
