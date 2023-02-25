@@ -1,0 +1,485 @@
+Script started on 2023-02-25 01:31:35-05:00
+bash-4.4$  tail -n +2 ~/amazon_reviews_us_Books_v1_02.tsv | sort |uniq -c | sort -rn | head -n 200 > top_customers.txt
+bash-4.4$ ls
+CUSTOMERS  top_customers.txt  ws5.txt
+bash-4.4$ less top_customers.txt 
+  21922 50122160
+   9964 50732546
+   2664 52615377
+   2215 45041039
+   1797 50776149
+   1786 50913245
+   1643 20595117
+   1622 45273033
+   1416 39569598
+   1384 49693975
+   1336 38491967
+   1300 36642996
+   1263 50881246
+   1159 52254603
+   1039 51987970
+   1036 49750558
+   1023 49115690
+   1006 50608834
+    997 50068216
+    996 51147790
+    995 43546353
+    966 50199793
+    939 52476938
+bash-4.4$ cat top_customers.txt 
+  21922 50122160
+   9964 50732546
+   2664 52615377
+   2215 45041039
+   1797 50776149
+   1786 50913245
+   1643 20595117
+   1622 45273033
+   1416 39569598
+   1384 49693975
+   1336 38491967
+   1300 36642996
+   1263 50881246
+   1159 52254603
+   1039 51987970
+   1036 49750558
+   1023 49115690
+   1006 50608834
+    997 50068216
+    996 51147790
+    995 43546353
+    966 50199793
+    939 52476938
+    931 50774468
+    901 49273674
+    896 49148452
+    884 41012519
+    873 52938698
+    850 52793250
+    844 52173832
+    842 49447323
+    822 52564468
+    822 49355567
+    802 52797744
+    790 52894384
+    782 53082946
+    763 49992211
+    757 53084107
+    754 51065232
+    744 51934027
+    744 50652563
+    742 52830980
+    735 52774618
+    735 52496677
+    731 49202417
+    710 51243012
+    699 53072811
+    697 51379338
+    693 53009736
+    683 51325095
+    678 53016962
+    678 50702879
+    673 50941451
+    672 35985708
+    671 45193257
+    662 46983871
+    659 53008075
+    654 51917998
+    652 52266433
+    644 50895620
+    636 51010391
+    625 39134375
+    623 35004134
+    619 53071109
+    619 53037408
+    619 51247650
+    619 46134316
+    616 50592435
+    609 52706646
+    607 45284807
+    603 53047425
+    597 52517734
+    595 52223435
+    591 51809405
+    588 38672733
+    580 52753467
+    574 50761804
+    572 52500542
+    572 50378566
+    567 51210331
+    555 49786731
+    548 50389232
+    543 51110953
+    542 49042814
+    537 51915884
+    533 52447634
+    526 52966385
+    523 52947077
+    519 30559999
+    516 52845727
+    513 50057481
+    506 52008531
+    503 51199159
+    495 51145127
+    493 50736950
+    491 53052943
+    488 52012289
+    482 52697458
+    471 42800127
+    470 51142763
+    467 49945008
+    466 50667536
+    465 51214937
+    461 53047293
+    461 52639757
+    460 52451546
+    458 52474360
+    456 52300235
+    456 49865122
+    447 52150226
+    447 50864942
+    444 52791632
+    442 38002140
+    432 49600435
+    431 45761937
+    428 48354073
+    426 49390985
+    424 51130320
+    424 49248343
+    423 52754918
+    422 12598621
+    421 53058008
+    421 51007592
+    420 37010568
+    419 50720905
+    416 53057410
+    413 51197300
+    412 52683195
+    412 27681907
+    408 51152957
+    406 52161778
+    406 50005452
+    404 50669529
+    404 49998206
+    403 50759440
+    401 52709697
+    398 52631742
+    398 50676891
+    393 52479341
+    392 52160649
+    391 52705209
+    389 52533596
+    387 51126995
+    386 51301346
+    385 52850806
+    385 51744771
+    383 49908889
+    381 51645455
+    380 39792599
+    378 53067930
+    377 53075086
+    377 38243114
+    375 52776495
+    374 50718004
+    374 29569603
+    373 52868156
+    372 52778209
+    371 31612235
+    369 52048190
+    367 52844555
+    364 53084041
+    364 52918997
+    363 53018444
+    363 50704952
+    363 50015891
+    361 50200864
+    360 47964988
+    359 51403161
+    355 50424562
+    355 49945404
+    352 20422170
+    349 53002620
+    349 52976583
+    349 52489871
+    348 53071190
+    343 50287514
+    340 14720400
+    338 52812751
+    337 52801489
+    337 40684262
+    335 52882573
+    334 33631101
+    331 52724725
+    326 49989755
+    323 52558011
+    323 52036644
+    323 50038433
+    322 52821302
+    322 52294653
+    321 52147775
+    320 49200164
+    319 53078987
+    319 50593376
+    319 41521760
+    318 52660946
+    317 52804949
+    317 49263512
+    317 38610362
+    316 50658053
+    316 49423742
+bash-4.4$  tail -n +2 ~/amazon_reviews_us_Books_v1_02.tsv | awk -F'\t' '{print $22}' | sort |uniq -c | sort -rn | head -n 200 > top_customers.txt
+bash-4.4$ awk '{print $2}' top_customers.txt > top_customers_id.txt
+bash-4.4$ ls
+CUSTOMERS  top_customers_id.txt  top_customers.txt  ws5.txt
+bash-4.4$ for customer in $(cat top_customers_id.txt); do echo "extracting custommer $customer"; grep -w "$customer" ~/amazon_reviews_us_Books_v1_02.tsv > CUSTOMEERS/$customer.txt; done && echo "Finish extraction of data"
+extracting customer 50122160
+extracting customer 50732546
+extracting customer 52615377
+extracting customer 45041039
+extracting customer 50776149
+extracting customer 50913245
+extracting customer 20595117
+extracting customer 45273033
+extracting customer 39569598
+extracting customer 49693975
+extracting customer 38491967
+extracting customer 36642996
+extracting customer 50881246
+extracting customer 52254603
+extracting customer 51987970
+extracting customer 49750558
+extracting customer 49115690
+extracting customer 50608834
+extracting customer 50068216
+extracting customer 51147790
+extracting customer 43546353
+extracting customer 50199793
+extracting customer 52476938
+extracting customer 50774468
+extracting customer 49273674
+extracting customer 49148452
+extracting customer 41012519
+extracting customer 52938698
+extracting customer 52793250
+extracting customer 52173832
+extracting customer 49447323
+extracting customer 52564468
+extracting customer 49355567
+extracting customer 52797744
+extracting customer 52894384
+extracting customer 53082946
+extracting customer 49992211
+extracting customer 53084107
+extracting customer 51065232
+extracting customer 51934027
+extracting customer 50652563
+extracting customer 52830980
+extracting customer 52774618
+extracting customer 52496677
+extracting customer 49202417
+extracting customer 51243012
+extracting customer 53072811
+extracting customer 51379338
+extracting customer 53009736
+extracting customer 51325095
+extracting customer 53016962
+extracting customer 50702879
+extracting customer 50941451
+extracting customer 35985708
+extracting customer 45193257
+extracting customer 46983871
+extracting customer 53008075
+extracting customer 51917998
+extracting customer 52266433
+extracting customer 50895620
+extracting customer 51010391
+extracting customer 39134375
+extracting customer 35004134
+extracting customer 53071109
+extracting customer 53037408
+extracting customer 51247650
+extracting customer 46134316
+extracting customer 50592435
+extracting customer 52706646
+extracting customer 45284807
+extracting customer 53047425
+extracting customer 52517734
+extracting customer 52223435
+extracting customer 51809405
+extracting customer 38672733
+extracting customer 52753467
+extracting customer 50761804
+extracting customer 52500542
+extracting customer 50378566
+extracting customer 51210331
+extracting customer 49786731
+extracting customer 50389232
+extracting customer 51110953
+extracting customer 49042814
+extracting customer 51915884
+extracting customer 52447634
+extracting customer 52966385
+extracting customer 52947077
+extracting customer 30559999
+extracting customer 52845727
+extracting customer 50057481
+extracting customer 52008531
+extracting customer 51199159
+extracting customer 51145127
+extracting customer 50736950
+extracting customer 53052943
+extracting customer 52012289
+extracting customer 52697458
+extracting customer 42800127
+extracting customer 51142763
+extracting customer 49945008
+extracting customer 50667536
+extracting customer 51214937
+extracting customer 53047293
+extracting customer 52639757
+extracting customer 52451546
+extracting customer 52474360
+extracting customer 52300235
+extracting customer 49865122
+extracting customer 52150226
+extracting customer 50864942
+extracting customer 52791632
+extracting customer 38002140
+extracting customer 49600435
+extracting customer 45761937
+extracting customer 48354073
+extracting customer 49390985
+extracting customer 51130320
+extracting customer 49248343
+extracting customer 52754918
+extracting customer 12598621
+extracting customer 53058008
+extracting customer 51007592
+extracting customer 37010568
+extracting customer 50720905
+extracting customer 53057410
+extracting customer 51197300
+extracting customer 52683195
+extracting customer 27681907
+extracting customer 51152957
+extracting customer 52161778
+extracting customer 50005452
+extracting customer 50669529
+extracting customer 49998206
+extracting customer 50759440
+extracting customer 52709697
+extracting customer 52631742
+extracting customer 50676891
+extracting customer 52479341
+extracting customer 52160649
+extracting customer 52705209
+extracting customer 52533596
+extracting customer 51126995
+extracting customer 51301346
+extracting customer 52850806
+extracting customer 51744771
+extracting customer 49908889
+extracting customer 51645455
+extracting customer 39792599
+extracting customer 53067930
+extracting customer 53075086
+extracting customer 38243114
+extracting customer 52776495
+extracting customer 50718004
+extracting customer 29569603
+extracting customer 52868156
+extracting customer 52778209
+extracting customer 31612235
+extracting customer 52048190
+extracting customer 52844555
+extracting customer 53084041
+extracting customer 52918997
+extracting customer 53018444
+extracting customer 50704952
+extracting customer 50015891
+extracting customer 50200864
+extracting customer 47964988
+extracting customer 51403161
+extracting customer 50424562
+extracting customer 49945404
+extracting customer 20422170
+extracting customer 53002620
+extracting customer 52976583
+extracting customer 52489871
+extracting customer 53071190
+extracting customer 50287514
+extracting customer 14720400
+extracting customer 52812751
+extracting customer 52801489
+extracting customer 40684262
+extracting customer 52882573
+extracting customer 33631101
+extracting customer 52724725
+extracting customer 49989755
+extracting customer 52558011
+extracting customer 52036644
+extracting customer 50038433
+extracting customer 52821302
+extracting customer 52294653
+extracting customer 52147775
+extracting customer 49200164
+extracting customer 53078987
+extracting customer 50593376
+extracting customer 41521760
+extracting customer 52660946
+extracting customer 52804949
+extracting customer 49263512
+extracting customer 38610362
+extracting customer 50658053
+extracting customer 49423742
+Finish extraction of data
+bash-4.4$ ls
+CUSTOMERS  top_customers_id.txt  top_customers.txt  ws5.txt
+bash-4.4$ ls
+12598621.txt  49248343.txt  50718004.txt  52008531.txt	52778209.txt
+14720400.txt  49263512.txt  50720905.txt  52012289.txt	52791632.txt
+20422170.txt  49273674.txt  50732546.txt  52036644.txt	52793250.txt
+20595117.txt  49355567.txt  50736950.txt  52048190.txt	52797744.txt
+27681907.txt  49390985.txt  50759440.txt  52147775.txt	52801489.txt
+29569603.txt  49423742.txt  50761804.txt  52150226.txt	52804949.txt
+30559999.txt  49447323.txt  50774468.txt  52160649.txt	52812751.txt
+31612235.txt  49600435.txt  50776149.txt  52161778.txt	52821302.txt
+33631101.txt  49693975.txt  50864942.txt  52173832.txt	52830980.txt
+35004134.txt  49750558.txt  50881246.txt  52223435.txt	52844555.txt
+35985708.txt  49786731.txt  50895620.txt  52254603.txt	52845727.txt
+36642996.txt  49865122.txt  50913245.txt  52266433.txt	52850806.txt
+37010568.txt  49908889.txt  50941451.txt  52294653.txt	52868156.txt
+38002140.txt  49945008.txt  51007592.txt  52300235.txt	52882573.txt
+38243114.txt  49945404.txt  51010391.txt  52447634.txt	52894384.txt
+38491967.txt  49989755.txt  51065232.txt  52451546.txt	52918997.txt
+38610362.txt  49992211.txt  51110953.txt  52474360.txt	52938698.txt
+38672733.txt  49998206.txt  51126995.txt  52476938.txt	52947077.txt
+39134375.txt  50005452.txt  51130320.txt  52479341.txt	52966385.txt
+39569598.txt  50015891.txt  51142763.txt  52489871.txt	52976583.txt
+39792599.txt  50038433.txt  51145127.txt  52496677.txt	53002620.txt
+40684262.txt  50057481.txt  51147790.txt  52500542.txt	53008075.txt
+41012519.txt  50068216.txt  51152957.txt  52517734.txt	53009736.txt
+41521760.txt  50122160.txt  51197300.txt  52533596.txt	53016962.txt
+42800127.txt  50199793.txt  51199159.txt  52558011.txt	53018444.txt
+43546353.txt  50200864.txt  51210331.txt  52564468.txt	53037408.txt
+45041039.txt  50287514.txt  51214937.txt  52615377.txt	53047293.txt
+45193257.txt  50378566.txt  51243012.txt  52631742.txt	53047425.txt
+45273033.txt  50389232.txt  51247650.txt  52639757.txt	53052943.txt
+45284807.txt  50424562.txt  51301346.txt  52660946.txt	53057410.txt
+45761937.txt  50592435.txt  51325095.txt  52683195.txt	53058008.txt
+46134316.txt  50593376.txt  51379338.txt  52697458.txt	53067930.txt
+46983871.txt  50608834.txt  51403161.txt  52705209.txt	53071109.txt
+47964988.txt  50652563.txt  51645455.txt  52706646.txt	53071190.txt
+48354073.txt  50658053.txt  51744771.txt  52709697.txt	53072811.txt
+49042814.txt  50667536.txt  51809405.txt  52724725.txt	53075086.txt
+49115690.txt  50669529.txt  51915884.txt  52753467.txt	53078987.txt
+49148452.txt  50676891.txt  51917998.txt  52754918.txt	53082946.txt
+49200164.txt  50702879.txt  51934027.txt  52774618.txt	53084041.txt
+49202417.txt  50704952.txt  51987970.txt  52776495.txt	53084107.txt
+bash-4.4$ cd ..
+bash-4.4$ history >cmds.log
+bash-4.4$ ls
+cmds.log  CUSTOMERS  top_customers_id.txt  top_customers.txt  ws5.txt
+bash-4.4$ exit
+
+Script done on 2023-02-25 02:33:11-05:00
