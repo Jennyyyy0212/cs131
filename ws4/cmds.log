@@ -311,13 +311,11 @@
   311  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > CUSTOMERS/50732546.txt
   312  cat CUSTOMERS/50732546.txt
   313  less CUSTOMERS/50732546.txt
-  314* grep "^0001055178" amazon_reviews_us_Books_v1_02.tsv | cut -f8,9 > PRODUCTS/0001055178.txt
   315  grep "60875410" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > PRODUCTS/60875410.txt
   316  cat PRODUCTS/60875410.txt
   317  grep "60875410" amazon_reviews_us_Books_v1_02.tsv | cut -f 9,10 > PRODUCTS/60875410.txt
   318  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9,10 > CUSTOMERS/50732546.txt
   319  less CUSTOMERS/50732546.txt
-  320  paste CUSTOMERS/A32T2H8150OJLU.txt | awk '{sum+=$2/$3} END {^Cint sum/NR}' | bc
   321  paste CUSTOMERS/50732546.txt | awk '{sum+=$1/$2} END {print sum/NR}' | bc
   322  ls
   323  less CUSTOMERS/50732546.txt
