@@ -1,0 +1,1000 @@
+   21  ls
+   22  mv cmds.log cs131/ws1
+   23  ls
+   24  cd cs131/ws1
+   25  ls
+   26  cd ..
+   27  git add .
+   28  git status
+   29  git commit -m "first commit"
+   30  git config user.name "Jenny"
+   31  git commit -m "first commit"
+   32  git status
+   33  git push origin master
+   34  Username for 'https://github.com': Jennyyyy0212
+   35  git push origin master
+   36  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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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
+   37  git push origin master
+   38  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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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
+   39  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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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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
+   40  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
+   41  git push origin master
+   42  Initialized empty Git repository in /mnt/scratch/an-chieh23sp/cs131/.git/
+   43  [an-chieh23sp@sjsu cs131]$ git remote add origin https://github.com/Jennyyyy0212/cs131.git
+   44  [an-chieh23sp@sjsu cs131]$ mkdir ws1
+   45  [an-chieh23sp@sjsu cs131]$ cd
+   46  [an-chieh23sp@sjsu ~]$ ls
+   47  cmds.log  cs131  index.html  index.html.1  index.html.2  index.html.3
+   48  [an-chieh23sp@sjsu ~]$
+   49  [an-chieh23sp@sjsu ~]$ mv cmds.log cs131/ws1
+   50  [an-chieh23sp@sjsu ~]$ ls
+   51  cs131  index.html  index.html.1  index.html.2  index.html.3
+   52  [an-chieh23sp@sjsu ~]$ cd cs131/ws1
+   53  [an-chieh23sp@sjsu ws1]$ ls
+   54  cmds.log
+   55  [an-chieh23sp@sjsu ws1]$ cd ..
+   56  [an-chieh23sp@sjsu cs131]$ git add .
+   57  [an-chieh23sp@sjsu cs131]$ git status
+   58  On branch master
+   59  No commits yet
+   60  Changes to be committed:
+   61    (use "git rm --cached <file>..." to unstage)
+   62          new file:   ws1/cmds.log
+   63  [an-chieh23sp@sjsu cs131]$ git commit -m "first commit"
+   64  Author identity unknown
+   65  *** Please tell me who you are.
+   66  Run
+   67    git config --global user.email "you@example.com"
+   68    git config --global user.name "Your Name"
+   69  to set your account's default identity.
+   70  Omit --global to set the identity only in this repository.
+   71  fatal: empty ident name (for <an-chieh23sp@sjsu.pub.pic2.ibm.com>) not allowed
+   72  [an-chieh23sp@sjsu cs131]$ git config user.name "Jenny"
+   73  [an-chieh23sp@sjsu cs131]$ git commit -m "first commit"
+   74  [master (root-commit) 9d89edf] first commit
+   75   Committer: Jenny <an-chieh23sp@sjsu.pub.pic2.ibm.com>
+   76  Your name and email address were configured automatically based
+   77  on your username and hostname. Please check that they are accurate.
+   78  You can suppress this message by setting them explicitly. Run the
+   79  following command and follow the instructions in your editor to edit
+   80  your configuration file:
+   81      git config --global --edit
+   82  After doing this, you may fix the identity used for this commit with:
+   83      git commit --amend --reset-author
+   84   1 file changed, 6 insertions(+)
+   85   create mode 100644 ws1/cmds.log
+   86  [an-chieh23sp@sjsu cs131]$ git status
+   87  On branch master
+   88  nothing to commit, working tree clean
+   89  [an-chieh23sp@sjsu cs131]$ git push origin master
+   90  mkdir ws2
+   91  ls
+   92  wget https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+   93  unzip amazon_reviews_us_Books_v1_02.tsv.gz
+   94  ls
+   95  gunzip amazon_reviews_us_Books_v1_02.tsv.gz
+   96  ls
+   97  grep --help
+   98  grep verified amazon_reviews_us_Books_v1_02.tsv
+   99  PuTTY
+  100  ls
+  101  sort searchfile.txt
+  102   searchfile.txt
+  103  ls
+  104  grep --help
+  105  grep verified amazon_reviews_us_Books_v1_02.tsv
+  106  PuTTY > verfied.txt
+  107  touch counts.txt
+  108  ls
+  109  wc grep verified amazon_reviews_us_Books_v1_02.tsv
+  110  wc -l grep verified amazon_reviews_us_Books_v1_02.tsv
+  111  wc -l grep verified amazon_reviews_us_Books_v1_02.tsv > counts.txt
+  112  counts.txt
+  113  ls
+  114  wc -l grep unverified amazon_reviews_us_Books_v1_02.tsv >> counts.txt
+  115  grep unverified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  116  99grep unverified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  117  99grep verified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  118  grep verified amazon_reviews_us_Books_v1_02.tsv | wc -l
+  119  grep verified amazon_reviews_us_Books_v1_02.tsv | wc -l > counts.txt
+  120   grep verified amazon_reviews_us_Books_v1_02.tsv | wc -l > counts.txt
+  121   grep verified amazon_reviews_us_Books_v1_02.tsv | wc -w >> counts.txt
+  122  grep unverified amazon_reviews_us_Books_v1_02.tsv | wc -l >> counts.txt
+  123   grep unverified amazon_reviews_us_Books_v1_02.tsv | wc -w >> counts.txt
+  124  cat counts.txt
+  125  vi counts.txt
+  126  cat counts.txt
+  127  mv counts.txt cs131/ws2
+  128  ls
+  129  cd cs131
+  130  ls
+  131  cd ws2
+  132  ls
+  133  history > cmds.log
+  134  ls
+  135  git -commit "use wc grep and vi mode"
+  136  git add
+  137  git add .
+  138  git -commit "use wc grep and vi mode"
+  139  git commit -m "use wc grep and vi mode"
+  140  git status
+  141  git push origin master
+  142  ls
+  143  less amazon_reviews_us_Books_v1_02.tsv 
+  144  ls
+  145  grep -E $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv |wc -l
+  146  grep -Ev $'(.*\t){11}Y\t' amazon_reviews_us_Books_v1_02.tsv |wc -l
+  147  printenv | less
+  148  export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  149  echo $DATETIME
+  150  unset $DATETIME
+  151  echo $DATETIME
+  152  unset DATETIME
+  153  echo $DATETIME
+  154  date
+  155  date> out.txt
+  156  cat out.text
+  157  cat out.txt
+  158  vim out.txt
+  159  date 1> out.txt
+  160  cat out.txt
+  161  date 2> err.txt
+  162  cat err.txt
+  163  ls
+  164  ls huhuhujghuj
+  165  ls gguguygug 2> err.txt
+  166  cat err.txt
+  167  date >out.txt
+  168  cat date
+  169  catout.txt
+  170  cat out/txt
+  171  cat out.txt
+  172  ls >> out.txt
+  173  cat out.txt
+  174  ls >> out2.txt
+  175  cat out2.txt
+  176  ls -i
+  177  state err.txt
+  178  stat err.txt
+  179  stat cs131
+  180  echo $?
+  181  ls gyuguyugu
+  182  echo $?
+  183  vim sample.txt
+  184  ls
+  185  cat sample.txt
+  186  vim sample.txt
+  187  ls -a
+  188  vim .bashrc
+  189  cat .bashrc
+  190  ls -latr
+  191  source .bashrc
+  192  ls -a
+  193  vim .bachrc
+  194  vim .bashrc
+  195  rm .bachrc
+  196  source .bashrc
+  197  lll
+  198  ls
+  199  amazon_reviews_us_Books_v1_02.tsv
+  200  show amazon_reviews_us_Books_v1_02.tsv
+  201  git show amazon_reviews_us_Books_v1_02.tsv
+  202  cat amazon_reviews_us_Books_v1_02.tsv
+  203  head amazon_reviews_us_Books_v1_02.tsv
+  204  head  amazon_reviews_us_Books_v1_02.tsv
+  205  less  amazon_reviews_us_Books_v1_02.tsv
+  206  ls
+  207  head amazon_reviews_us_Books_v1_02.tsv
+  208  cut -c $'(.*\t){1}' amazon_reviews_us_Books_v1_02.tsv
+  209  cut --help
+  210  cat amazon_reviews_us_Electronics_v1_00.tsv | awk -F '\t' '{print $1}' | sort | uniq -c | sort -nr | head -n 3
+  211  cut -f 1 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n 3
+  212  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n 3
+  213   cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n 3
+  214  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n 3 > ws3.txt
+  215  cat ws3.txt
+  216  cut -f 4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n 3 
+  217  cut -f 4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn | head -n 3 >> ws3.txt
+  218  cat ws3.txt
+  219  ls
+  220  cd cs131
+  221  mkdir ws3
+  222  ls
+  223  cd..
+  224  cd ..
+  225  mv ws3.txt cs131/ws3
+  226  ls
+  227  cs131
+  228  cd cd131
+  229  cd cs131
+  230  ws3
+  231  cd ws3
+  232  ls
+  233  vi ws3.txt
+  234  cat ws3.txt
+  235  history > cmds.log
+  236  ls
+  237  vim cmds.log
+  238  history
+  239  history > cmds.log
+  240  cat cmds.log
+  241  vim cmds.log
+  242  vi cmds.log
+  243  vi ws3/cmds.log 
+  244  ls
+  245  cmds.log
+  246  cat cmds.log
+  247  cd cs131\ws3
+  248  cd cd131/ws3
+  249  cd cs131/ws3
+  250  ls
+  251  cat cmds.log
+  252  vim cmds.log
+  253  vim ws3/cmds.log
+  254  vi cmds.log
+  255  git commit -m "use the commands cut, sort, uniq -c" 
+  256  git add
+  257  git add .
+  258  git commit -m "use the commands cut, sort, uniq -c"
+  259  git status
+  260  git push origin master
+  261  vim .bash_aliases
+  262  cat .bash_aliases
+  263  source .bashrc
+  264  lll
+  265  echo '$PATH'
+  266  echo "$PATH"
+  267  echo `$PATH`
+  268  id -u
+  269  chown 1067 cs131
+  270  ls 
+  271  ls -l
+  272  vim samplef.txt
+  273  cat samplef.txt
+  274  sort -g samplef.txt
+  275  sort - g smaplef.txt | uniq -c
+  276  sort -g smaplef.txt | uniq -c
+  277  ls
+  278  cut -f2 amazon_reviews_us_Books_v1_02.tsv > temp.txt
+  279  cat temp.txt
+  280  ls
+  281  sort -g samplef.txt
+  282  sort -g samplef.txt |uniq -c
+  283  less temp.txt
+  284  mkdir temp
+  285  cd temp
+  286  ls -a
+  287  find . f -empty
+  288  find . -P f -empty
+  289  find . -type f -empty
+  290  cat .bashrc
+  291  l
+  292  w
+  293  ls
+  294  cd cs131
+  295  ls
+  296  cd..
+  297  cd ..
+  298  ls
+  299  vim .bashrc
+  300  cat .bashrc
+  301  source .bashrc
+  302  w
+  303  l
+  304  script ws4.txt
+  305  mkdir CUSTOMERS
+  306  mkdir PRODUCTS
+  307  amazon_reviews_us_Books_v1_02.tsv less
+  308  less amazon_reviews_us_Books_v1_02.tsv
+  309  grep "48541186" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > CUSTOMERS/48541186.txt
+  310  cat CUSTOMERS/48541186.txt
+  311  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > CUSTOMERS/50732546.txt
+  312  cat CUSTOMERS/50732546.txt
+  313  less CUSTOMERS/50732546.txt
+  314  grep "^0001055178" amazon_reviews_us_Books_v1_02.tsv | cut -f8,9 > PRODUCTS/0001055178.txt
+  315  grep "60875410" amazon_reviews_us_Books_v1_02.tsv | cut -f 9 > PRODUCTS/60875410.txt
+  316  cat PRODUCTS/60875410.txt
+  317  grep "60875410" amazon_reviews_us_Books_v1_02.tsv | cut -f 9,10 > PRODUCTS/60875410.txt
+  318  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9,10 > CUSTOMERS/50732546.txt
+  319  less CUSTOMERS/50732546.txt
+  320  paste CUSTOMERS/A32T2H8150OJLU.txt | awk '{sum+=$2/$3} END {^Cint sum/NR}' | bc
+  321  paste CUSTOMERS/50732546.txt | awk '{sum+=$1/$2} END {print sum/NR}' | bc
+  322  ls
+  323  less CUSTOMERS/50732546.txt
+  324  paste CUSTOMERS/50732546.txt | awk '{if ($1 !=0)sum+=$1/$2} END {print sum/NR}' | bc
+  325  paste CUSTOMERS/50732546.txt | awk '{if ($1 !=0)sum+=$1/$2} END {print sum/NR*100}' | bc
+  326  paste CUSTOMERS/50732546.txt | awk '{if ($1 !=0)sum+=$1/$2} END {print sum/NR*100}' | bc >  meanScore.txt
+  327  paste PRODUCTS/60875410.txt | awk '{if ($1 !=0)sum+=$1/$2} END {print sum/NR*100}' | bc >>  meanScore.txt
+  328  cat meanScore.txt
+  329  vim meanScore.txt
+  330  cd cs131
+  331  ls
+  332  mkdir ws4
+  333  ls
+  334  cd ..
+  335  mv PRODUCTS cs131/ws4
+  336  mv CUSTOMERS cs131/ws4
+  337  LS
+  338  ls
+  339  mv ws4.txt cs131/ws4
+  340  mv meanScore.txt cs131/ws4
+  341  cd cs131
+  342  cd ws4
+  343  ls
+  344  cd CUSTOMERS 
+  345  ls
+  346  rm 48541186.txt
+  347  ls
+  348  cd .. 
+  349  history > cmds.log
+  350  ls
+  351  git add
+  352  got add .
+  353  git add .
+  354  got commit -m ".bashrc, bc, awk and redirection"
+  355  git commit -m ".bashrc, bc, awk and redirection"
+  356  git push origin master
+  357  hp_QYxbTCTcwjKwt0yRFpARjfQJQd6r333ozUzo
+  358  git status
+  359  git push origin master
+  360  git pull
+  361  git push origin master
+  362  status
+  363  got status
+  364  git status
+  365  git pull origin master
+  366  git add .
+  367  git push origin master
+  368  git status
+  369  git add .
+  370  cd cs131
+  371  cd ws4
+  372  git status
+  373  git commit -m "fix problem"
+  374  git status
+  375  git push
+  376  git push origin master
+  377  cd ..
+  378  clear
+  379  cd ..
+  380  cd cs131
+  381  mkdir a1
+  382  ls
+  383  history > cmds.log
+  384  mv cmds.log a1
+  385  cd a1
+  386  cat cmds.log
+  387  ls > mypipe
+  388  ls
+  389  ls > result.txt
+  390  cat result.txt
+  391  wc -l re
+  392  wc -l result.txt
+  393  ls | wc -l
+  394  rm temp
+  395  rm temp.txt
+  396  tm sample.txt
+  397  rm sample.txt
+  398  ls
+  399  wc -1 re
+  400  cat out2.txy
+  401  cat out2.txt
+  402  rv out2.txt
+  403  rm out2.txt
+  404  cd record.txt
+  405  cd record.txt | wc -l
+  406  who
+  407  who | wc -l
+  408  wc -l < who
+  409  wc - l who
+  410  who | tee users.txt
+  411  ls
+  412  who | wc -l|tee 
+  413  who | wc -l | tee users.lst
+  414  ls
+  415  cat users.lst
+  416  who | tee /dev/tty | wc -c
+  417  mkfifo mypipe
+  418  ls
+  419  wc mypipe
+  420  mkdir a1
+  421  ls
+  422  cd a1
+  423  echo /
+  424  echo cd ~
+  425  cd ~
+  426  ls
+  427  cd cs131/a1
+  428  ls
+  429  echo $HOME
+  430  id
+  431  mkdir temp
+  432  chmod u-x temp
+  433  cd temp
+  434  ls
+  435  ls temp
+  436  ls -l temp
+  437  cd
+  438  ls
+  439  cd cs131/a1
+  440  ls
+  441  temp/test.txt
+  442  touch temp/test.txt
+  443  mkdir temp2
+  444  mv temp2 temp3
+  445  ls
+  446  ch temp3
+  447  cd temp3
+  448  ls
+  449  cd ..
+  450  ld
+  451  ls
+  452  cp -r temp3 temp4
+  453  ls
+  454  cd temp4
+  455  ls
+  456  touch temp3 test.txt
+  457  ls
+  458  cd ..
+  459  ls
+  460  rm -r temp4
+  461  rm -r temp3
+  462  ls
+  463  mkdir temp2
+  464  ls
+  465  cd temp2
+  466  touch testFile.txt
+  467  ls
+  468  cd ..
+  469  mv temp2 temp3
+  470  ls
+  471  cd temp3
+  472  ls
+  473  cd ..
+  474  cp -r temp3 temp4
+  475  ls
+  476  cd temp4
+  477  ls
+  478  cd ..
+  479  ls /proc/ | grep mem
+  480  ls /proc/ | grep cpu
+  481  head /proc/meminfo
+  482  head /proc/iomem
+  483  head /proc/cpuinfo
+  484  tail /proc/cpuinfo
+  485  cat /proc/cpuinfo
+  486  cat /proc/cpuinfo | grep processor | wc -l
+  487  tail /proc/cpuinfo | grep "MHz"
+  488  head /proc/cpuinfo | grep "model name"
+  489  head /proc/cpuinfo
+  490  head /proc/cpuinfo | grep "architected"
+  491  cp /home/test/A1/downloaded_hashtags_extend.csv ~/cs131/a1/twitter.csv
+  492  ls
+  493  wc -l twitter.csv
+  494  du -h -s twitter.csv
+  495  ls -lh twitter.csv
+  496  grep -i "great" twitter.csv | wc -l
+  497  file twitter.txt
+  498  file twitter.csv
+  499  iconv -f UTF-8 -t ASCII twitter.csv > twitter_changed.csv
+  500  ls
+  501  less twitter_changed.csv
+  502  file twitter_changed.csv 
+  503  head -n 1 twitter.csv
+  504  hand -n 2 twitter.csv 
+  505  head -n 2 twitter.csv 
+  506  ask -F',' '{print $1}' twitter.csv | sort | uniq | wc -l 
+  507  awk -F',' '{print $1}' twitter.csv | sort | uniq | wc -l 
+  508  awk -F',' '{print $1}' twitter.csv | uniq | wc -l 
+  509  awk -F',' '{print $NF}' twitter.csv | sort | uniq | wc -l 
+  510  awk -F',' '{print $2}' twitter.csv | sort | uniq | wc -l 
+  511  awk -F',' '{print $2}' twitter.csv | sort -u | wc -l 
+  512  ls
+  513  cd cs131
+  514  cd a1
+  515  cd.. 
+  516  cd ..
+  517  rm -r a1
+  518  ls
+  519  script a1.txt
+  520  vim a1.txt
+  521  mv a1.txt a1
+  522  ls
+  523  cd a1
+  524  ls
+  525  cp /home/test/A1/downloaded_hashtags_extend.csv ~/cs131/a1/twitter.csv
+  526  ls
+  527  less twitter.csv
+  528  rm twitter.csv
+  529  ls
+  530  scipt >> a1.txt
+  531  script >> a1.txt
+  532  ls
+  533  less a1.txt
+  534  cat a1.txt
+  535  script a12.txt
+  536  ls
+  537  ls typescript
+  538  cat typescript 
+  539  rm typescript 
+  540  ls
+  541  vim a1.txt
+  542  vi a1.txt
+  543  vim a1.txt
+  544  vim a1.txt
+  545  cat a1.txt 
+  546  ls
+  547  rm a12.txt 
+  548  ls
+  549  history > cmds.log
+  550  ls
+  551  mv twitter_changed.csv cd ~
+  552  mv twitter_changed.csv  ~
+  553  ls
+  554  cd ..
+  555  l
+  556  ls
+  557  cd ..
+  558  ls
+  559  mv /cs131/a1/twitter.csv cd 
+  560  cd cs131/a1
+  561  ls
+  562  mv twitter.csv cd 
+  563  cd
+  564  ls
+  565  cd cs131/a1
+  566  ls
+  567  cs cs131
+  568  cd cs131
+  569  cd ..
+  570  ls
+  571  cd a1
+  572  mv cd twitter.csv
+  573  ls
+  574  mv twitter.csv cd~
+  575  ls
+  576  mv cd~ twitter.csv
+  577  mv twitter.csv cd ~
+  578  cd.. 
+  579  cd ..
+  580   ls
+  581  cd cd131/a1
+  582  cd cs131
+  583  cd a1
+  584  git add .
+  585  git commit -m "assignment1"
+  586  git push origin master
+  587  git pull
+  588  git push origin master
+  589  git pull
+  590  git pull master
+  591  git push --help
+  592  git pull -master
+  593  git push
+  594  git pull master
+  595  git pull origin master
+  596  git push origin master
+  597  cut -f 1,7 amazon_reviews_us_Books_v1_02.tsv | tail -n +2 | sort | uniq -c | sort -rn | head -n 200 | awk '{print $2}' | while read customer_id; do
+  598   tail -n +2 amazon_reviews_us_Books_v1_02.tsv | sort |uniq -c | sort -rn | head -n 200 > top_customers.txt
+  599   tail -n +2 /amazon_reviews_us_Books_v1_02.tsv | sort |uniq -c | sort -rn | head -n 200 > top_customers.txt
+  600   tail -n +2 ~/amazon_reviews_us_Books_v1_02.tsv | sort |uniq -c | sort -rn | head -n 200 > top_customers.txt
+  601  ls
+  602  less top_customers.txt 
+  603  for customer in $(cat top_customers.txt);  :q
+  604   tail -n +2 ~/amazon_reviews_us_Books_v1_02.tsv | awk -F'\t' '{print $2}' | sort |uniq -c | sort -rn | head -n 200 > top_customers.txt
+  605  less top_customers.txt 
+  606  cat top_customers.txt 
+  607  awk '{print $2}'
+  608  awk '{print $2}' top_customers.txt 
+  609  awk '{print $2}' top_customers.txt > top_customers.txt 
+  610  for customer in $(cat top_customers.txt); do echo "extracting customer $customer"; grep -w "$customer" ~/amazon_reviews_us_Books_v1_02.tsv > cs131/ws5/CUSTOMERS/$customer.txt; done
+  611  ls
+  612  cd CUSTOMERS/
+  613  ls
+  614  cd ..
+  615  ls
+  616  echo CUSTOMERS
+  617  cd CUSTOMERS/
+  618  ls
+  619  cd .. 
+  620  ls
+  621  cd CUSTOMERS
+  622  LS
+  623  ls
+  624  for customer in $(cat top_customers.txt); do echo "extracting customer $customer"; grep -w "$customer" ~/amazon_reviews_us_Books_v1_02.tsv > cs131/ws5/CUSTOMERS/$customer.txt; done
+  625  cd ..
+  626  ls
+  627  for customer in $(cat top_customers.txt); do echo "extracting customer $customer"; grep -w "$customer" ~/amazon_reviews_us_Books_v1_02.tsv > cs131/ws5/CUSTOMERS/$customer.txt; done
+  628  ls
+  629  cat top_customers.txt 
+  630  vim top_customers.txt 
+  631   tail -n +2 ~/amazon_reviews_us_Books_v1_02.tsv | awk -F'\t' '{print $2}' | sort |uniq -c | sort -rn | head -n 200 > top_customers.txt
+  632  awk '{print $2}' top_customers.txt > top_customers_id.txt 
+  633  ls
+  634  for customer in $(cat top_customers_id.txt); do echo "extracting customer $customer"; grep -w "$customer" ~/amazon_reviews_us_Books_v1_02.tsv > cs131/ws5/CUSTOMERS/$customer.txt; done
+  635  ls
+  636  cd CUSTOMERS
+  637  ls
+  638  cd ..
+  639  ls
+  640  for customer in $(cat top_customers_id.txt); do echo "extracting customer $customer"; grep -w "$customer" ~/amazon_reviews_us_Books_v1_02.tsv > cs131/ws5/CUSTOMERS/$customer.txt; done
+  641  ls
+  642  for customer in $(cat top_customers_id.txt); do echo "extracting customer $customer"; grep -w "$customer" ~/amazon_reviews_us_Books_v1_02.tsv > CUSTOMERS/$customer.txt; done
+  643  for customer in $(cat top_customers_id.txt); do echo "extracting customer $customer"; grep -w "$customer" ~/amazon_reviews_us_Books_v1_02.tsv > CUSTOMERS/$customer.txt; done && echo "Finish extraction of data"
+  644  ls
+  645  cd CUSTOMERS/
+  646  LS
+  647  ls
+  648  cd ..
+  649  history >cmds.log
+  650  ls
+  651  cd cs131
+  652  mkdir ws5
+  653  ls
+  654  cd ws5
+  655  mkdir CUSTOMERS
+  656  LS
+  657  ls
+  658  script ws5.txt
+  659  vim ws5.txt
+  660  git add .
+  661  git commit -m "for loop on the bash shell"
+  662  git push origin master
+  663  cat .bashrc
+  664  touch .bashrc
+  665  vim .bashrc
+  666  source .bashrc 
+  667  l
+  668  w
+  669  ls
+  670  grep "50732546" amazon_reviews_us_Books_v1_02.tsv | cut -f 9,10 > CUSTOMERS/50732546.txt
+  671  grep "50732546" ~/amazon_reviews_us_Books_v1_02.tsv | cut -f 9,10 > CUSTOMERS/50732546.txt
+  672  grep "60875410" ~/amazon_reviews_us_Books_v1_02.tsv | cut -f 9,10 > PRODUCTS/60875410.txt
+  673  paste CUSTOMERS/50732546.txt | awk '{if ($1 !=0)sum+=$1/$2} END {print sum/NR*100}' | bc >  meanScore.txt
+  674  paste PRODUCTS/60875410.txt | awk '{if ($1 !=0)sum+=$1/$2} END {print sum/NR*100}' | bc >>  meanScore.txt
+  675  cat meanScore.txt
+  676  vim meanScore.txt
+  677  cs cs131/ws4
+  678  cd cs131/ws4
+  679  ls
+  680  scipt ws4.txt
+  681  script ws4.txt
+  682  ls
+  683  history >> cmds.log
+  684  git add .
+  685  cd CUSTOMERS
+  686  ls
+  687  cd ..
+  688  cd PRODUCTS
+  689  ls
+  690  rm 0001055178.txt 
+  691  cd ..
+  692  git add .
+  693  vim ws4.txt
+  694  git add .
+  695  git commit -m "make up the script of ws4.txt"
+  696  git push origin master
+  697  trap -l
+  698  ulimit -a
+  699  v
+  700  [an-chieh23sp@sjsu ~]$ trap -l
+  701   1) SIGHUP       2) SIGINT       3) SIGQUIT      4) SIGILL       5) SIGTRAP
+  702   6) SIGABRT      7) SIGBUS       8) SIGFPE       9) SIGKILL     10) SIGUSR1
+  703  11) SIGSEGV     12) SIGUSR2     13) SIGPIPE     14) SIGALRM     15) SIGTERM
+  704  16) SIGSTKFLT   17) SIGCHLD     18) SIGCONT     19) SIGSTOP     20) SIGTSTP
+  705  21) SIGTTIN     22) SIGTTOU     23) SIGURG      24) SIGXCPU     25) SIGXFSZ
+  706  26) SIGVTALRM   27) SIGPROF     28) SIGWINCH    29) SIGIO       30) SIGPWR
+  707  31) SIGSYS      34) SIGRTMIN    35) SIGRTMIN+1  36) SIGRTMIN+2  37) SIGRTMIN+3
+  708  38) SIGRTMIN+4  39) SIGRTMIN+5  40) SIGRTMIN+6  41) SIGRTMIN+7  42) SIGRTMIN+8
+  709  43) SIGRTMIN+9  44) SIGRTMIN+10 45) SIGRTMIN+11 46) SIGRTMIN+12 47) SIGRTMIN+13
+  710  48) SIGRTMIN+14 49) SIGRTMIN+15 50) SIGRTMAX-14 51) SIGRTMAX-13 52) SIGRTMAX-12
+  711  53) SIGRTMAX-11 54) SIGRTMAX-10 55) SIGRTMAX-9  56) SIGRTMAX-8  57) SIGRTMAX-7
+  712  58) SIGRTMAX-6  59) SIGRTMAX-5  60) SIGRTMAX-4  61) SIGRTMAX-3  62) SIGRTMAX-2
+  713  63) SIGRTMAX-1  64) SIGRTMAX
+  714  [an-chieh23sp@sjsu ~]$ ulimit -a
+  715  core file size          (blocks, -c) 0
+  716  data seg size           (kbytes, -d) unlimited
+  717  scheduling priority             (-e) 0
+  718  file size               (blocks, -f) unlimited
+  719  pending signals                 (-i) 285186
+  720  max locked memory       (kbytes, -l) 64
+  721  max memory size         (kbytes, -m) unlimited
+  722  open files                      (-n) 1024
+  723  pipe size            (512 bytes, -p) 8
+  724  POSIX message queues     (bytes, -q) 819200
+  725  real-time priority              (-r) 0
+  726  stack size              (kbytes, -s) 8192
+  727  cpu time               (seconds, -t) unlimited
+  728  max user processes              (-u) 285186
+  729  virtual memory          (kbytes, -v) unlimited
+  730  file locks                      (-x) unlimited
+  731  vim long.sh
+  732  sh long.sh 
+  733  fg
+  734  sh long.sh > time.txt
+  735  jobs
+  736  bg 
+  737  jobs 
+  738  cat time.txt 
+  739  cat long.sh 
+  740  fg
+  741  jobs
+  742  sh long.sh > time.txt &
+  743  jobs
+  744  cat time.txt 
+  745  ps -a
+  746  jobs
+  747  disown
+  748  s
+  749  disown
+  750  jobs
+  751  ps -ef | grep long
+  752  ps -ef
+  753  ps -ef | head
+  754  sh long.sh > time.txt
+  755  bg 
+  756  jobs
+  757  fg
+  758  sh long.sh > time.txt &
+  759  jobs
+  760  cp /home/test/A1/downloaded_tweets_extend_nolf2.tsv ~/cs131/a2/retweet.tsv
+  761  cp /home/test/A1/downloaded_tweets_extend_original_nolf2.tsv ~/cs131/a2/original.tsv
+  762  ls
+  763  head -n 1 original.tsv 
+  764  head -n 1 retweet.tsv 
+  765  head -n 2 original.tsv 
+  766  head -n 2 retweet.tsv 
+  767  cut -f2 original.tsv | grep -v 'NA' | sort | uniq -c | sort -nr | head -n 10
+  768  cut -f2 original.tsv | sort | uniq -c | sort -nr | head -n 10
+  769  cut -f6 original.tsv | grepsort | uniq -c | sort -nr | head -n 10
+  770  cut -f6 original.tsv | grep -v 'NA' | sort | uniq -c | sort -nr | head -n 10
+  771  cut -f6 original.tsv | grep -v -e '^$' | sort | uniq -c | sort -nr | head -n 10
+  772  cut -f2 retweet.tsv | sort | uniq -c | sort -nr | head -n 10
+  773  cat original.tsv > combine.tsv
+  774  cat retweet.tsv  >> combine.tsv 
+  775  cut -f4 combine.tsv | grep -v -e '^$' | sort | uniq -c | sort -nr | head -n 30
+  776  cd cs131
+  777  mkdir a2
+  778  ls
+  779  cd a2
+  780  script a2.txt
+  781  script a21.txt
+  782  history > cmds.log
+  783  ls
+  784  exit
+  785  for i in{0..3} ; do echi $i ;done
+  786  for i in {0..3} ; do echi $i ;done
+  787  for i in {0..3} ; do echo $i ;done
+  788  vim number.txt
+  789  for i in `cat number.txt`; do echo $i;done
+  790  ls -a
+  791  tmux
+  792  tmux new-session -s cs131class31
+  793  tmux ls
+  794  tmux attach -t cs131class31
+  795  tmux ls
+  796  tmux kill-session -t cs131class31
+  797  tmux ls
+  798  tmux kill-session -t 0
+  799  tmux ls
+  800  gunplot
+  801  gnuplot
+  802  cd cs131/a2
+  803  ls
+  804  less original.tsv 
+  805  cut -f2 original.tsv | grep "replied_to" | sort | uniq -c | sort -nr | head -n 10
+  806  cut -f 2,5 original.tsv | grep "replied_to" | sort -k1 | uniq -c | sort -nr | head -n 10
+  807  grep -E "1118324398761574401&&replied_to" original.tsv 
+  808  grep "1118324398761574401" original.tsv | grep "replied_to"
+  809  grep "1118324398761574401" original.tsv | grep "replied_to" | uniq -c
+  810  cut -f 2,5 original.tsv | grep "replied_to" | sort -k1 | uniq -c | head -n 10
+  811  cut -f 2,5 original.tsv | grep "replied_to" | sort -k1 | uniq -c | sort -nr -2 | head -n 10
+  812  cut -f 2,5 original.tsv | grep "replied_to" | sort -k1 | uniq -c | sort -nr -k2 | head -n 10
+  813  cut -f 2,5 original.tsv | grep "replied_to" | sort -k1 | uniq -c | sort -nr -k1 | head -n 10
+  814  grep "1118324398761574401" original.tsv | grep "replied_to"
+  815  cut -f 2,5 original.tsv | grep "replied_to" | grep "1118324398761574401"
+  816  cut -f 2,5 original.tsv | grep "replied_to" | grep "1118324398761574401" | sort -k1
+  817  cut -f 2,5 original.tsv | grep "replied_to" | grep "1118324398761574401" | sort -k1 | uniq -c
+  818  cut -f 2,5 original.tsv | grep "replied_to" | grep "1118324398761574401" | sort -k1 | uniq -c -k1
+  819  cut -f 2,5 original.tsv | grep "replied_to" | grep "1118324398761574401" | sort -k1 | cut -f1 | uniq -c
+  820  cut -f 2,5 original.tsv | grep "replied_to" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10
+  821  grep "1240682348120866816" original.tsv | grep "replied_to"
+  822  cut -f 2,5 original.tsv | grep "replied_to" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10 > top10.txt
+  823  cut -f 5 original.tsv | grep "replied_to" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10 
+  824  grep "ReferencedTweet id=1506438947366449156" original.tsv | grep "replied_to"
+  825  grep "ReferencedTweet id=1504834590560632839" original.tsv | grep "replied_to"
+  826  cut -f 5 original.tsv | grep "replied_to" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10 > top10referid.txt
+  827  cut -f 2,5 original.tsv | grep "retweeted" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10 
+  828  cut -f 2,5 retweet.tsv | grep "retweeted" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10 
+  829  grep "29447428" retweet.tsv | grep "retweeted" | head -n 10
+  830  grep "1060440219097423872" retweet.tsv | grep "retweeted" | head -n 3
+  831  cut -f 2,5 retweet.tsv | grep "retweeted" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10 >> top10.txt 
+  832  cat top10.txt
+  833  vim top10.txt
+  834  vim top10referid.txt 
+  835  cut -f 5 original.tsv | grep "replied_to" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10 > top10referid.txt
+  836  cat top10referid.txt 
+  837  vim top10referid.txt 
+  838  cut -1 original.tsv | grep -f top10referid.txt 
+  839  cut -f1 original.tsv | grep -f top10referid.txt 
+  840  cut -f1,2 original.tsv | grep -f top10referid.txt 
+  841  head original.tsv 
+  842  grep "replied_to"  original.tsv | head  
+  843  cat top10referid.txt 
+  844  cut -f1,2 original.tsv | grep -f top10referid.txt
+  845  cut -f4 retweet.tsv | grep -v -e '^$' | sort | uniq -c | sort -nr | head -n 30
+  846  cut -f4 retweet.tsv | grep -v -e '^$' | sort | uniq -c | sort -nr | head -n 30 >> top10.txt
+  847  vim top10.txt
+  848  cd cs131/a2
+  849  ls
+  850  less original.tsv 
+  851  less original.tsv | grep "replied_to"
+  852  less original.tsv 
+  853  less retweet.tsv 
+  854  head -n1 original.tsv 
+  855  head | cut -f 2 original.tsv 
+  856   cut -f 2 original.tsv | head 
+  857  head original.tsv 
+  858  script a22.txt
+  859  cd cs131/a2
+  860  cut -f1,2 original.tsv 
+  861  cut -f1,2 original.tsv | head -n 10
+  862  vim a22.txt
+  863  cd cs131/a2
+  864  ls
+  865  cat top10referid.txt 
+  866  echo "me"
+  867  pwd
+  868  echo `pwd`
+  869  echo "pwd"
+  870  `pwd`
+  871  echo $HOME
+  872  cut -f 5 original.tsv | grep "replied_to" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10
+  873  cut -f 5 original.tsv | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10
+  874  cut -f 5 original.tsv | sort | cut -f1 | uniq -c | sort -nr | head -n 10
+  875  cut -f 5 original.tsv | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10
+  876  cd cs131/a2
+  877  ls
+  878  script a23.txt
+  879  cut -f 5 original.tsv | grep "replied_to" | sort | uniq -c | head
+  880  cut -f 5 original.tsv | grep "replied_to" | sort | uniq -c | cut -2 | head
+  881  cut -f 5 original.tsv | grep "replied_to" | sort | uniq -c | cut -f2 | head
+  882  cut -f 5 original.tsv | grep "replied_to" | sort | uniq -c | cut -f 2 | head
+  883  cut -f 5 original.tsv | grep "replied_to" | sort | uniq -c | cut -f 2 | less
+  884  cut -f 5 original.tsv | grep "replied_to" | sort | uniq -c | grep -o 'id=[0-9]*' | cut -d= -f2 > replied_id.txt
+  885  head replied_id.txt 
+  886  cut -f 1,2 original.tsv | fgrep replied_id.txt | head
+  887  cut -f 1 original.tsv | fgrep replied_id.txt | head
+  888  cut -f 1 original.tsv | fgrep -f replied_id.txt | head
+  889  cut -f 1,2  original.tsv | fgrep -f replied_id.txt | head
+  890  cut -f 1,2  original.tsv | fgrep -f replied_id.txt | cut -f 2| sort | uniq -c | sort -nr | head 
+  891  cut -f 1,2  original.tsv | fgrep -f replied_id.txt | cut -f 2| sort | uniq -c | sort -nr | head - 10
+  892  cut -f 1,2  original.tsv | fgrep -f replied_id.txt | cut -f 2| sort | uniq -c | sort -nr | head 10
+  893  cut -f 1,2  original.tsv | fgrep -f replied_id.txt | cut -f 2| sort | uniq -c | sort -nr | head -10 > 
+  894  cut -f 1,2  original.tsv | fgrep -f replied_id.txt | cut -f 2| sort | uniq -c | sort -nr | head - 10 
+  895  ls
+  896  rm combine.tsv 
+  897  cut -f 1,2  original.tsv | fgrep -f replied_id.txt | cut -f 2| sort | uniq -c | sort -nr | head -10 >> top10.txt 
+  898  cat top10.txt
+  899  cd cs131/s2
+  900  cd cs131/a2
+  901  ls
+  902  rm a23.txt
+  903  ls
+  904  head -2 original.tsv 
+  905  less original.tsv 
+  906  head original.tsv 
+  907  tail original.tsv 
+  908  script a23.txt
+  909  vim top10.txt
+  910  vim a2.txt
+  911  vim a21.txt
+  912  vim a2.txt
+  913  rm a2.txt
+  914  ls
+  915  vim a21.txt
+  916  rm a21.txt
+  917  vim a22.txt
+  918  mv a22.txt a2.txt
+  919  cat a2.txt
+  920  rm a23.txt
+  921  ls
+  922  history >> cmds.log
+  923  git -add.
+  924  git -add .
+  925  git add .
+  926  git commit -m "assignment2"
+  927  git push origin master
+  928  mv top10.txt result.txt
+  929  ls
+  930  git push origin master
+  931  git add .
+  932  git commit -m "assignment2"
+  933  git push origin master
+  934  cd ..
+  935  ls
+  936  mkdir source
+  937  ls
+  938  mv twitter.csv source
+  939  ls
+  940  mv twitter_changed.csv source
+  941  cd cs131/a2
+  942  mv original.tsv ~/source
+  943  mv retweet.tsv ~/source
+  944  ls
+  945  mv top10referid.txt ~/source
+  946  ls
+  947  git commit -m "assignment2"
+  948  git add .
+  949  git commit -m "assignment2"
+  950  git push origin master
+  951  cd ../..
+  952  cd source
+  953  ls
+  954  mkdir a2
+  955  mv original.tsv a2
+  956  mv retweet.tsv a2
+  957  mv top10referid.txt a2
+  958  ls
+  959  mkdir a1
+  960  mv twitter.csv a1
+  961  mv twitter_changed.csv a1
+  962  ls
+  963  cd ..
+  964  ls
+  965  cd temp
+  966  ls
+  967  rm -r temp
+  968  cd ..
+  969  rm -r temp
+  970  ls
+  971  cat sedscr_append
+  972  vim sedscr_append
+  973  sed -f sedscr_append amazon_reviews_us_Books_v1_02.tsv 
+  974  vim hp.txt
+  975  awk '{print $n}' n=3 hp.txt n=2 hp.txt
+  976  awk -v n=3 '{print $n}' hp.txt n=2 hp.txt
+  977  cat hp.txt 
+  978  vim if.txt
+  979  cat if.txt 
+  980  awk -F : -f if.txt /etc/passwd
+  981  vim if.txt 
+  982  cat if.txt 
+  983  awk -f if.txt /etc/passwd | head -2
+  984  vim if.txt 
+  985  cat if.txt 
+  986  awk -f if.txt /etc/passwd | head -2
+  987  vim test
+  988  cat test
+  989  vim maxmin
+  990  awk -v var1=15 -v var2=20 -f maxmin 
+  991  cat maxmin 
+  992  awk -f test 
+  993  sed -n '/^\(.*\t\)\{11\}N\t/p' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+  994  sed -n '(.*\t){11}N\t/p' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+  995  sed -n '\(.*\t\)\{11\}N\t/p' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+  996  sed -n -e '\(.*\t\)\{11\}N\t/p' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+  997  sed -n '^\(.*\t\)\{11\}N\t/p' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+  998  sed -n '/\(.*\t\)\{11\}N\t/p' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+  999  sed -n '/\(.*\t\)\{11\}N\t' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+ 1000  sed -n '/\(.*\t\)\{11\}N\t/' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+ 1001  sed -n '/\(.*\t\)\{11\}N\t/p' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt 
+ 1002  sed -n '/\(.*\t\)\{3\}1844161560\t/p' unverified.txt > 1844161560.txt 
+ 1003  sed 's/^\(.*\t\)\{13\}[,.;]//g' 1844161560.txt 
+ 1004  less 1844161560.txt 
+ 1005  sed -E 's/^\(.*\t\)\{13\}[,.;]//g' 1844161560.txt 
+ 1006  sed -E 's/^\(.*\t\)\{13\}to//g' 1844161560.txt 
+ 1007  sed 's/[,.;]//g' 1844161560.txt 
+ 1008  head 1844161560.txt 
+ 1009  sed 's/[,.;]//g; s/\bto\b//g' 1844161560.txt 
+ 1010  sed 's/[,.;]//g; s/\bto\b//g' 1844161560.txt > 1844161560_task5.txt
+ 1011  sed 's/<*/>//g' 1844161560.txt
+ 1012  sed 's//<*//>//g' 1844161560.txt
+ 1013  sed -E 's/<*/>//g' 1844161560.txt
+ 1014  sed -E 's/<*//>//g' 1844161560.txt
+ 1015  sed -E 's/^<*/>//g' 1844161560.txt
+ 1016  sed -E 's/<[^>]\+>//g' 1844161560.txt
+ 1017  sed -E 's/<[^>]*>//g' 1844161560.txt
+ 1018  sed -E 's/<[^>]*>//g' 1844161560.txt > 1844161560_task6.txt
+ 1019  ls
+ 1020  history > cmnd.log

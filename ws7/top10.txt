@@ -1,0 +1,11 @@
+Top 10 most frequent words in the review_headline of the verified reviews:
+  19433 books
+   6465 the
+   4977 of
+   4246 and
+   2873 to
+   1698 for
+   1629 in
+   1544 book
+   1217 guide
+    779 edition

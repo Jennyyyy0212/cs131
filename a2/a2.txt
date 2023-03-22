@@ -1,0 +1,185 @@
+Script started on 2023-03-03 03:06:15-05:00
+a) Find the top 10 users who replied the most to other users (downloaded_tweets_extend_original_nolf2.tsv)
+
+Command: 
+bash-4.4$ cut -f 2,5 original.tsv | grep "replied_to" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10
+
+    106 380648579
+    104 18831926
+     83 16050065
+     45 1240682348120866816
+     35 1094971056358637568
+     34 140496030
+     34 1387010761994682371
+     32 172323296
+     27 117810351
+     19 1573800344
+
+b) Find the top users who got the most replies from other users (downloaded_tweets_extend_original_nolf2.tsv)
+
+Commands:
+bash-4.4$ cut -f 5 original.tsv | grep "replied_to" | sort | uniq -c | grep -o 'id=[0-9]*' | cut -d= -f2 > replied_id.txt
+bash-4.4$ head replied_id.txt
+1036512308544065537
+1045329516762030080
+1045332021965283328
+1045372802713284608
+1045375602654470144
+1045376628149215232
+1045377223853633536
+1045377571376967680
+1045378154766848000
+1045378819182358528
+bash-4.4$ cut -f 1,2  original.tsv | fgrep -f replied_id.txt | cut -f 2| sort | uniq -c | sort -nr | head
+     62 18831926
+     41 16050065
+     25 1240682348120866816
+     19 380648579
+     19 117810351
+     14 42836999
+     13 1094971056358637568
+     11 243413063
+     11 140496030
+     10 15021381
+bash-4.4$ cut -f 1,2  original.tsv | fgrep -f replied_id.txt | cut -f 2| sort | uniq -c | sort -nr | head -10 >> top10.txt
+bash-4.4$ cat top10.txt
+Top 10 users who replied the most to other users:
+    106 380648579
+    104 18831926
+     83 16050065
+     45 1240682348120866816
+     35 1094971056358637568
+     34 140496030
+     34 1387010761994682371
+     32 172323296
+     27 117810351
+     19 1573800344
+
+Top 10 users who retweeted the most other tweets:
+   2065 45379403
+   1678 77726331
+   1641 870244616003403781
+   1582 1028022611324747776
+   1312 711608180535640064
+   1281 139109800
+   1234 177400353
+   1216 832019161454817280
+   1159 29447428
+   1139 1060440219097423872
+
+Top 30 hashtags used most frequently overall for anything:
+   1266 Ukraine
+    945 COVID19
+    870 LongCovid
+    833 "FBPE,FollowBackFriday"
+    320 Russia
+    305 BREAKING
+    257 PMQs
+    208 auspol
+    181 StandWithUkraine
+    177 AmiesMovieRating
+    176 Omicron
+    168 Mariupol
+    136 Kyiv
+    135 BA2
+    122 "Russia,Ukraine"
+    120 COVID
+    118 Bales2022FilmChallenge
+    111 Putin
+    108 COVIDisAirborne
+    107 "PutinHitler,StandWithUkraine,PutinHitler,PutinWarCriminal,StopPutinNOW,RussiaSanctions,BoycottRussia"
+    107 ClimateCrisis
+    106 BoycottATP
+    105 Russian
+     98 "cathrynhartt,harttandsoul,actor,actorslife"
+     97 Covid19
+     93 Partygate
+     87 TikTok
+     85 longcovid
+     80 Ottawa
+     79 Brexit
+     62 18831926
+     41 16050065
+     25 1240682348120866816
+     19 380648579
+     19 117810351
+     14 42836999
+     13 1094971056358637568
+     11 243413063
+     11 140496030
+     10 15021381
+
+c) Find the top 10 users who retweeted the most other tweets (downloaded_tweets_extend_nolf2.tsv)
+
+Commands: 
+bash-4.4$ cut -f 2,5 retweet.tsv | grep "retweeted" | sort -k1 | cut -f1 | uniq -c | sort -nr | head -n 10
+
+   2065 45379403
+   1678 77726331
+   1641 870244616003403781
+   1582 1028022611324747776
+   1312 711608180535640064
+   1281 139109800
+   1234 177400353
+   1216 832019161454817280
+   1159 29447428
+   1139 1060440219097423872
+
+bash-4.4$ cat top10.txt
+    106 380648579
+    104 18831926
+     83 16050065
+     45 1240682348120866816
+     35 1094971056358637568
+     34 140496030
+     34 1387010761994682371
+     32 172323296
+     27 117810351
+     19 1573800344
+   2065 45379403
+   1678 77726331
+   1641 870244616003403781
+   1582 1028022611324747776
+   1312 711608180535640064
+   1281 139109800
+   1234 177400353
+   1216 832019161454817280
+   1159 29447428
+   1139 1060440219097423872
+
+d) Find the 30 hashtags used most frequently overall for anything (downloaded_tweets_extend_nolf2.tsv)
+
+Commands: 
+bash-4.4$ cut -f4 retweet.tsv | grep -v -e '^$' | sort | uniq -c | sort -nr | head -n 30
+
+   1266 Ukraine
+    945 COVID19
+    870 LongCovid
+    833 "FBPE,FollowBackFriday"
+    320 Russia
+    305 BREAKING
+    257 PMQs
+    208 auspol
+    181 StandWithUkraine
+    177 AmiesMovieRating
+    176 Omicron
+    168 Mariupol
+    136 Kyiv
+    135 BA2
+    122 "Russia,Ukraine"
+    120 COVID
+    118 Bales2022FilmChallenge
+    111 Putin
+    108 COVIDisAirborne
+    107 "PutinHitler,StandWithUkraine,PutinHitler,PutinWarCriminal,StopPutinNOW,RussiaSanctions,BoycottRussia"
+    107 ClimateCrisis
+    106 BoycottATP
+    105 Russian
+     98 "cathrynhartt,harttandsoul,actor,actorslife"
+     97 Covid19
+     93 Partygate
+     87 TikTok
+     85 longcovid
+     80 Ottawa
+     79 Brexit
+Script done on 2023-03-03 04:09:50-05:00

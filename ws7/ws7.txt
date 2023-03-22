@@ -1,0 +1,65 @@
+Script started on 2023-03-21 17:47:22-04:00
+bash-4.4$ awk -F '\t' '$12=="Y" {print $0}' ~/amazon_reviews_us_Books_v1_02.tsv | sort > verified.txt
+bash-4.4$ ls
+verified.txt  ws7.txt
+bash-4.4$ awk '{print tolower($13)}' verified.txt | tr -s '[:punct:][:space:]' '\n' | awk NF | sort | uniq -c | sort -nr | head -n 10 | awk '{print $2}'
+n
+books
+y
+5
+4
+the
+1
+3
+2
+of
+bash-4.4$ awk '{print tolower($13)}' verified.txt | tr -s '[:punct:][:space:]' '\n' | awk NF | sort | uniq -c | sort -nr | head -n 10
+  20475 n
+  19433 books
+  15056 y
+  14303 5
+   7191 4
+   6465 the
+   5979 1
+   5809 3
+   5688 2
+   4977 of
+bash-4.4$ awk '{print tolower($13)}' verified.txt | awk '{gsub(/[[:punct:][:space:]]+/, " ")}1' | awk '{for(i=1;i<=NF;i++) print $i}' | sort | uniq -c | sort -nr | head -n 10
+  20476 n
+  19433 books
+  15056 y
+  14303 5
+   7191 4
+   6465 the
+   5979 1
+   5809 3
+   5688 2
+   4977 of
+bash-4.4$ awk '{print tolower($13)}' verified.txt | awk '{gsub(/[[:punct:][:space:][:digit:]]+/, " ")}1' | awk '{for(i=1;i<=NF;i++) print $i}' | sort | uniq -c | sort -nr | head -n 10
+  20476 n
+  19433 books
+  15060 y
+   6465 the
+   4977 of
+   4246 and
+   2873 to
+   2523 a
+   1698 for
+   1629 in
+bash-4.4$ awk '{print tolower($13)}' verified.txt | awk '{gsub(/[[:punct:][:space:][:digit:]]+/, " ")}1' | awk '{for(i=1;i<=NF;i++) print $i}' | awk 'length($0)>1'| sort | uniq -c | sort -nr | head -n 10
+ 19433 books
+   6465 the
+   4977 of
+   4246 and
+   2873 to
+   1698 for
+   1629 in
+   1544 book
+   1217 guide
+    779 edition
+bash-4.4$ awk '{print tolower($13)}' verified.txt | awk '{gsub(/[[:punct:][:space:][:digit:]]+/, " ")}1' | awk '{for(i=1;i<=NF;i++) print $i}' | awk 'length($0)>1'| sort | uniq -c | sort -nr | head -n 10 > top10.txt
+bash-4.4$ history > cmnd.log
+bash-4.4$ head -20 verified.txt > verified_head20.txt
+bash-4.4$ exit
+
+Script done on 2023-03-21 18:11:15-04:00
