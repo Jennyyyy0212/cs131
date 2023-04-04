@@ -1,7 +1,7 @@
 Script started on 2023-03-21 03:59:27-04:00
 bash-4.4$ sed -n '/\(.*\t\)\{11\}N\t/p' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt
 bash-4.4$ sed -n '/\(.*\t\)\{3\}1844161560\t/p' unverified.txt > 1844161560.txt 
-bash-4.4$ sed 's/[,.;]//g; s/\bto\b//g' 1844161560.txt > 1844161560_task5.txt
+bash-4.4$ sed 's/[,.;]//g; s/\bto\b//g' "$14" 1844161560.txt > 1844161560_task5.txt
 bash-4.4$ sed -E 's/<[^>]*>//g' 1844161560.txt > 1844161560_task6.txt
 bash-4.4$ ls
 1844161560_task5.txt  1844161560.txt  ws6.txt
