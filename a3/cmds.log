@@ -1,0 +1,43 @@
+Script started on 2023-04-04 19:07:35-04:00
+1) task1
+bash-4.4$ awk -F'\t' '{print $6, $2}' filter.tsv > task1.txt
+2) task2
+bash-4.4$ awk '{user[$1]++;} END {for(u in user) {if(user[u]>=3) print u" "user[u];}}' task1.txt > task2.txt
+3) task3
+[an-chieh23sp@sjsu a3]$ plot
+
+        G N U P L O T
+        Version 5.4 patchlevel 6    last modified 2023-02-09
+
+        Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+        Thomas Williams, Colin Kelley and many others
+
+        gnuplot home:     http://www.gnuplot.info
+        faq, bugs, etc:   type "help FAQ"
+        immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> set term svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'h1.svg'
+gnuplot> set xlabel 'Number of Replies'
+gnuplot> set ylabel 'Number of Users'
+gnuplot> binwidth=1
+gnuplot> bin(x,width)=width*floor(x/width) + binwidth/2.0
+gnuplot> plot 'task2.txt' using (bin($2,binwidth)):(1.0) smooth freq with boxes
+gnuplot> set term svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'h4.svg'
+gnuplot> set xlabel 'Number of Replies'
+gnuplot> set ylabel 'Number of Users'
+gnuplot> binwidth=4
+gnuplot> bin(x,width)=width*floor(x/width) + binwidth/2.0
+gnuplot> plot 'task2.txt' using (bin($2,binwidth)):(1.0) smooth freq with boxes
+gnuplot> exit
+bash-4.4$ exit
+
+Script done on 2023-04-04 19:33:39-04:00
