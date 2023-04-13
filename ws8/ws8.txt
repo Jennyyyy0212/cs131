@@ -1,0 +1,7 @@
+The number of lines in Amazon_dataset.tsv: 
+3105521 /mnt/scratch/an-chieh23sp/amazon_reviews_us_Books_v1_02.tsv
+
+The number of lines in sampled: 
+993766 sampled
+
+So, it can prove the result of shell script match with the theoretical calculation. 
