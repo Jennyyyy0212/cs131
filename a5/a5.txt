@@ -635,4 +635,289 @@ bitmap.h     genopt.com   linkopt.vms	    readline.c	unset.c
 boundary.c   getcolor.c   Makefile	    readline.h	unset.o
 boundary.h   getcolor.h   makefile.all	    readline.o	util3d.c
 boundary.o   getcolor.o   Makefile.am	    save.c	util3d.h
-breaders.c   GNUmakefile  makefile.awc	    save.h	util3
+breaders.c   GNUmakefile  makefile.awc	    save.h	util3d.o
+breaders.h   gnuplot	  Makefile.in	    save.o	util.c
+breaders.o   gnuplot.opt  Makefile.maint    scanner.c	util.h
+color.c      gpexecute.c  marching_cubes.h  scanner.h	util.o
+color.h      gpexecute.h  matrix.c	    scanner.o	variable.c
+color.o      gp_hist.h	  matrix.h	    set.c	variable.h
+command.c    gplt_x11.c   matrix.o	    set.o	variable.o
+command.h    gplt_x11.h   misc.c	    setshow.h	version.c
+command.o    gp_time.h	  misc.h	    show.c	version.h
+contour.c    gp_types.h   misc.o	    show.o	version.o
+contour.h    graph3d.c	  mouse.c	    specfun.c	vms.c
+contour.o    graph3d.h	  mousecmn.h	    specfun.h	vms.h
+datablock.c  graph3d.o	  mouse.h	    specfun.o	voxelgrid.c
+datablock.h  graphics.c   mouse.o	    standard.c	voxelgrid.h
+datablock.o  graphics.h   multiplot.c	    standard.h	voxelgrid.o
+datafile.c   graphics.o   multiplot.h	    standard.o	vplot.c
+datafile.h   help.c	  multiplot.o	    stats.c	vplot.h
+datafile.o   help.h	  national.h	    stats.h	vplot.o
+dynarray.c   help.o	  os2		    stats.o	win
+dynarray.h   hidden3d.c   parse.c	    stdfn.c	wxterminal
+dynarray.o   hidden3d.h   parse.h	    stdfn.h	x11.opt
+encoding.c   hidden3d.o   parse.o	    stdfn.o	xdg.c
+encoding.h   history.c	  plot2d.c	    strftime.c	xdg.h
+encoding.o   history.o	  plot2d.h	    syscfg.h	xdg.o
+eval.c	     internal.c   plot2d.o	    tables.c
+bash-4.4$ cd ~/cs131/a5
+bash-4.4$ ls
+a5.txt		      monthlyTrend.txt	state-numberofcase.txt	  us-states.csv
+cases_and_deaths.svg  monthsplit.awk	state-numberofdeath.txt
+covid_plot.png	      plot_data.txt	us-counties-recent.csv.1
+bash-4.4$ rm us-counties-recent.csv.1 
+bash-4.4$ git add .
+bash-4.4$ git commit -m "assfi[K[Kignment5"
+[master c6c1637] assignment5
+ 9 files changed, 139835 insertions(+)
+ create mode 100644 a5/a5.txt
+ create mode 100644 a5/cases_and_deaths.svg
+ create mode 100644 a5/covid_plot.png
+ create mode 100644 a5/monthlyTrend.txt
+ create mode 100644 a5/monthsplit.awk
+ create mode 100644 a5/plot_data.txt
+ create mode 100644 a5/state-numberofcase.txt
+ create mode 100644 a5/state-numberofdeath.txt
+ create mode 100644 a5/us-states.csv
+bash-4.4$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+bash-4.4$ git push origin master
+Username for 'https://github.com': Jennyyyy0212
+Password for 'https://Jennyyyy0212@github.com': 
+Enumerating objects: 13, done.
+Counting objects:   7% (1/13)Counting objects:  15% (2/13)Counting objects:  23% (3/13)Counting objects:  30% (4/13)Counting objects:  38% (5/13)Counting objects:  46% (6/13)Counting objects:  53% (7/13)Counting objects:  61% (8/13)Counting objects:  69% (9/13)Counting objects:  76% (10/13)Counting objects:  84% (11/13)Counting objects:  92% (12/13)Counting objects: 100% (13/13)Counting objects: 100% (13/13), done.
+Delta compression using up to 256 threads
+Compressing objects:   9% (1/11)Compressing objects:  18% (2/11)Compressing objects:  27% (3/11)Compressing objects:  36% (4/11)Compressing objects:  45% (5/11)Compressing objects:  54% (6/11)Compressing objects:  63% (7/11)Compressing objects:  72% (8/11)Compressing objects:  81% (9/11)Compressing objects:  90% (10/11)Compressing objects: 100% (11/11)Compressing objects: 100% (11/11), done.
+Writing objects:   8% (1/12)Writing objects:  16% (2/12)Writing objects:  25% (3/12)Writing objects:  33% (4/12)Writing objects:  41% (5/12)Writing objects:  50% (6/12)Writing objects:  58% (7/12)Writing objects:  66% (8/12)Writing objects:  75% (9/12)Writing objects:  83% (10/12)Writing objects:  91% (11/12)Writing objects: 100% (12/12)Writing objects: 100% (12/12), 1.11 MiB | 3.33 MiB/s, done.
+Total 12 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/Jennyyyy0212/cs131.git
+   4439cf0..c6c1637  master -> master
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4; deaths[$2]+=$5} END{for(state in cases) prrint state,cases[state],deaths[state]}' data.csv | sort -nrk2\[K
+awk: fatal: cannot open file `data.csv' for reading (No such file or directory)
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4; deaths[$2]+=$5} END{for(state in cases) prrint state,cases[state],deaths[state]}' data.csv | sort -nrk2[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1@u[1@s[1@-[1@s[9@tates.csv
+California 6315141921 67503932
+Texas 4640982014 62871518
+Florida 4065043272 52694427
+Illinois 2184024652 28833752
+Pennsylvania 1884002397 32653246
+Ohio 1813202197 25744838
+Georgia 1694478089 25872159
+Michigan 1601347249 26110438
+Arizona 1364935095 21257570
+Tennessee 1351257576 17188151
+Massachusetts 1165164476 18434286
+Virginia 1160403288 14102858
+Indiana 1153802424 16853649
+Wisconsin 1093914775 10004696
+Missouri 986827551 13875907
+Minnesota 966074812 9306987
+Washington 953581074 8960697
+Colorado 927507759 8976123
+Alabama 895850975 13758382
+Kentucky 873479809 10223505
+Louisiana 849484676 13259185
+Maryland 722342631 11055992
+Oklahoma 708629274 9457851
+Utah 626051174 3194695
+Arkansas 564075918 7905784
+Mississippi 545333974 9103032
+Iowa 533816276 6953414
+Connecticut 521290817 9082510
+Kansas 517178450 6182474
+Nevada 502276914 7437941
+Oregon 463805540 4865473
+Nebraska 328002597 3034055
+Idaho 299664100 3264273
+Montana 182999837 2246802
+Delaware 176542579 2113929
+Alaska 156619480 747325
+Hawaii 155169144 945585
+Maine 148235786 1464390
+Wyoming 104068492 1164870
+Vermont 70151935 434397
+Guam 29032671 239558
+West Virginia 321117902 4434127
+Virgin Islands 11075822 72839
+South Dakota 167555386 2159513
+South Carolina 988262712 12543645
+Rhode Island 244243050 2855775
+Puerto Rico 447674423 3223949
+Northern Mariana Islands 5332866 17462
+North Dakota 165191218 1729703
+North Carolina 1775818771 17314387
+New York 3481460364 59061061
+New Mexico 351256116 5393922
+New Jersey 1577338492 28482863
+New Hampshire 190247767 1777416
+District of Columbia 92781319 1160633
+American Samoa 2704294 11048
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4; deaths[$2]+=$5} END{for(state in cases) prrint state,cases[state],deaths[state]}' us-states.csv | sort -nrk2[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@"[1@"[1@,[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[1@"[C[1@"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-nrk2t-nrk2"-nrk2,-nrk2"-nrk2 -nrk2
+California,6315141921,67503932
+Texas,4640982014,62871518
+Florida,4065043272,52694427
+New York,3481460364,59061061
+Illinois,2184024652,28833752
+Pennsylvania,1884002397,32653246
+Ohio,1813202197,25744838
+North Carolina,1775818771,17314387
+Georgia,1694478089,25872159
+Michigan,1601347249,26110438
+New Jersey,1577338492,28482863
+Arizona,1364935095,21257570
+Tennessee,1351257576,17188151
+Massachusetts,1165164476,18434286
+Virginia,1160403288,14102858
+Indiana,1153802424,16853649
+Wisconsin,1093914775,10004696
+South Carolina,988262712,12543645
+Missouri,986827551,13875907
+Alabama,895850975,13758382
+Kentucky,873479809,10223505
+Louisiana,849484676,13259185
+Maryland,722342631,11055992
+Minnesota,966074812,9306987
+Washington,953581074,8960697
+Colorado,927507759,8976123
+Oklahoma,708629274,9457851
+Utah,626051174,3194695
+Arkansas,564075918,7905784
+Mississippi,545333974,9103032
+Iowa,533816276,6953414
+Connecticut,521290817,9082510
+Kansas,517178450,6182474
+Nevada,502276914,7437941
+Oregon,463805540,4865473
+Puerto Rico,447674423,3223949
+New Mexico,351256116,5393922
+Nebraska,328002597,3034055
+West Virginia,321117902,4434127
+Idaho,299664100,3264273
+Rhode Island,244243050,2855775
+New Hampshire,190247767,1777416
+Montana,182999837,2246802
+Delaware,176542579,2113929
+South Dakota,167555386,2159513
+North Dakota,165191218,1729703
+Maine,148235786,1464390
+Wyoming,104068492,1164870
+District of Columbia,92781319,1160633
+Alaska,156619480,747325
+Hawaii,155169144,945585
+Vermont,70151935,434397
+Guam,29032671,239558
+Virgin Islands,11075822,72839
+Northern Mariana Islands,5332866,17462
+American Samoa,2704294,11048
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4; deaths[$2]+=$5} END{for(state in cases) prrint state","cases[state]","deaths[state]}' us-states.csv | sort -t"," -nrk2 > sttate_totals.csv
+bash-4.4$ head -n 6 state_totals.csv | tail -n 5 > top_5_states.csv
+bash-4.4$ head -n 6 state_totals.csv | tail -n 5 > top_5_states.csv[1P[1@5[C[1@ [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P top_5_states.csv[1Ptop_5_states.csv[1Pop_5_states.csv[1Pp_5_states.csv[1P_5_states.csv[1P5_states.csv[1P_states.csv[1Pstates.csv[1Ptates.csv[1Pates.csv[1Ptes.csv[1Pes.csv[1Ps.csv[1P.csv[1Pcsv[1Psv[1Pv[K
+California,6315141921,67503932
+Texas,4640982014,62871518
+Florida,4065043272,52694427
+New York,3481460364,59061061
+Illinois,2184024652,28833752
+bash-4.4$ head -n 5 state_totals.csv > top_5_states.csv
+bash-4.4$ head -n 5 state_totals.csv > top_5_states.csv[C[1@|[1@ [1@c[1@y[1@t[1P[1P[1@u[1@t[1@ [1@-[1@f[1@ [1@1[1P top_5_states.csv[1Ptop_5_states.csv[1Pop_5_states.csv[1Pp_5_states.csv[1P_5_states.csv[1P5_states.csv[1P_states.csv[1Pstates.csv[1Ptates.csv[1Pates.csv[1Ptes.csv[1Pes.csv[1Ps.csv[1P.csv[1Pcsv[1Psv[1Pv[K
+California,6315141921,67503932
+Texas,4640982014,62871518
+Florida,4065043272,52694427
+New York,3481460364,59061061
+Illinois,2184024652,28833752
+bash-4.4$ head -n 5 state_totals.csv | cut -f 1[K[K[Kf "[K[K"","[C -1
+cut: invalid option -- '1'
+Try 'cut --help' for more information.
+bash-4.4$ head -n 5 state_totals.csv | cut -f"," -1[Kn1
+cut: invalid option -- '1'
+Try 'cut --help' for more information.
+bash-4.4$ head -n 5 state_totals.csv | cut -f"," -n1[K[K[K[K[K[K[K[Kd "," -f 1
+California
+Texas
+Florida
+New York
+Illinois
+bash-4.4$ head -n 5 state_totals.csv | cut -d "," -f 1 >top_5_states.csv
+bash-4.4$ ls
+a5.txt		      monthsplit.awk	       state_totals.csv
+cases_and_deaths.svg  plot_data.txt	       top_5_states.csv
+covid_plot.png	      state-numberofcase.txt   us-states.csv
+monthlyTrend.txt      state-numberofdeath.txt
+bash-4.4$ rm vo[K[Kcovid_plot.png 
+bash-4.4$ grep -f top_5_states.csv data.csv > top_5_states_data.csv[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1@u[1@s[1@-[1@s[9@tates.csv
+bash-4.4$ plot
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> set terminal svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'top_5_states.svg'
+gnuplot> set datafile separator ","
+gnuplot> datafile = "top_5_states_data.csv"
+gnuplot> date_col = 1
+gnuplot> cases_col = 4
+gnuplot> deaths_col = 5
+gnuplot> plot datafile using date_col:cases_col title "Cases" with lines, \
+>     datafile using date_col:deaths_col title "Deaths" with lines
+gnuplot> set title "Top 5 States with the Highest Number of Cases and Deaths"
+gnuplot> set xlabel "Date"
+gnuplot> set ylabel "Number of Cases/Deaths"
+gnuplot> exit
+bash-4.4$ ls
+a5.txt		      plot_data.txt	       top_5_states.csv
+cases_and_deaths.svg  state-numberofcase.txt   top_5_states_data.csv
+monthlyTrend.txt      state-numberofdeath.txt  top_5_states.svg
+monthsplit.awk	      state_totals.csv	       us-states.csv
+bash-4.4$ head -10[K[Kn 10 monthlyTrend.txt 
+2020-01,41,0
+2020-02,736,1
+2020-03,1095533,20322
+2020-04,19611708,990492
+2020-05,45452114,2695258
+2020-06,65288844,3498954
+2020-07,111626136,4307836
+2020-08,166758528,5259820
+2020-09,199758786,5879775
+2020-10,252794114,6774225
+bash-4.4$ ^C
+bash-4.4$ plot
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> set terminal svg size 800,500
+
+Terminal type is now 'svg'
+Options are 'size 800,500 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'covid.svg'
+gnuplot> set datafile separator ","
+gnuplot> plot "data.txt" using 1:2 with lines title "Case count", \
+>     "data.txt" using 1:3 with lines title "Death count">                                                        >plot "data.txt" using 1:2 with lines title "Case count", \>                                                          >>>>>plot "data.txt" using 1:2 with lines title "Case count", \>                                                          >>>>>plot "data.txt" using 1:2 with lines title "Case count", \>                                                          >set datafile separator ",">                          >set output 'covid.svg'>                      >set terminal svg size 800,500>                             >exit>    >set ylabel "Number of Cases/Deaths">                                   >set xlabel "Date">                 >set title "Top 5 States with the Highest Number of Cases and Deaths">                                                                    >datafile using date_col:deaths_col title "Deaths" with lines
+         warning: Cannot find or open file "data.txt"
+         undefined variable: datafile
+
+gnuplot> 
+gnuplot> plot "data.txt" using 1:2 with lines title "Case count",a.txt" using 1:2 with lines title "Case count",  a.txt" using 1:2 with lines title "Case count",  a.txt" using 1:2 with lines title "Case count",  .txt" using 1:2 with lines title "Case count",  m.txt" using 1:2 with lines title "Case count",  o.txt" using 1:2 with lines title "Case count",  t.txt" using 1:2 with lines title "Case count",  h.txt" using 1:2 with lines title "Case count",  T.txt" using 1:2 with lines title "Case count",  r.txt" using 1:2 with lines title "Case count",  e.txt" using 1:2 with lines title "Case count",  n.txt" using 1:2 with lines title "Case count",  d.txt" using 1:2 with lines title "Case count",  onthTrend.txt" using 1:2 with lines title "Case count",  thlTrend.txt" using 1:2 with lines title "Case count",  
