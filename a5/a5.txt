@@ -1,0 +1,638 @@
+Script started on 2023-05-03 19:04:12-04:00
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4} END {for (state in cases) print state, casses[state]}' us-states.csv 
+American Samoa 2704294
+California 6315141921
+Maryland 722342631
+Pennsylvania 1884002397
+Virginia 1160403288
+Alabama 895850975
+Florida 4065043272
+Rhode Island 244243050
+New Mexico 351256116
+Nebraska 328002597
+Wyoming 104068492
+Mississippi 545333974
+Minnesota 966074812
+Arkansas 564075918
+South Dakota 167555386
+Hawaii 155169144
+Louisiana 849484676
+Ohio 1813202197
+New York 3481460364
+Massachusetts 1165164476
+Virgin Islands 11075822
+Maine 148235786
+Georgia 1694478089
+Texas 4640982014
+Washington 953581074
+North Carolina 1775818771
+Colorado 927507759
+Indiana 1153802424
+Arizona 1364935095
+Kansas 517178450
+New Hampshire 190247767
+Wisconsin 1093914775
+Illinois 2184024652
+Oregon 463805540
+District of Columbia 92781319
+Idaho 299664100
+Michigan 1601347249
+Northern Mariana Islands 5332866
+Alaska 156619480
+Connecticut 521290817
+Delaware 176542579
+Puerto Rico 447674423
+Nevada 502276914
+West Virginia 321117902
+South Carolina 988262712
+Iowa 533816276
+Kentucky 873479809
+Tennessee 1351257576
+Vermont 70151935
+New Jersey 1577338492
+Guam 29032671
+North Dakota 165191218
+Montana 182999837
+Oklahoma 708629274
+Missouri 986827551
+Utah 626051174
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4} END {for (state in cases) print state, casses[state]}' us-states.csv | | sort -k2nr
+bash: syntax error near unexpected token `|'
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4} END {for (state in cases) print state, casses[state]}' us-states.csv | | sort -k2nr[1P[1P
+California 6315141921
+Texas 4640982014
+Florida 4065043272
+Illinois 2184024652
+Pennsylvania 1884002397
+Ohio 1813202197
+Georgia 1694478089
+Michigan 1601347249
+Arizona 1364935095
+Tennessee 1351257576
+Massachusetts 1165164476
+Virginia 1160403288
+Indiana 1153802424
+Wisconsin 1093914775
+Missouri 986827551
+Minnesota 966074812
+Washington 953581074
+Colorado 927507759
+Alabama 895850975
+Kentucky 873479809
+Louisiana 849484676
+Maryland 722342631
+Oklahoma 708629274
+Utah 626051174
+Arkansas 564075918
+Mississippi 545333974
+Iowa 533816276
+Connecticut 521290817
+Kansas 517178450
+Nevada 502276914
+Oregon 463805540
+Nebraska 328002597
+Idaho 299664100
+Montana 182999837
+Delaware 176542579
+Alaska 156619480
+Hawaii 155169144
+Maine 148235786
+Wyoming 104068492
+Vermont 70151935
+Guam 29032671
+American Samoa 2704294
+District of Columbia 92781319
+New Hampshire 190247767
+New Jersey 1577338492
+New Mexico 351256116
+New York 3481460364
+North Carolina 1775818771
+North Dakota 165191218
+Northern Mariana Islands 5332866
+Puerto Rico 447674423
+Rhode Island 244243050
+South Carolina 988262712
+South Dakota 167555386
+Virgin Islands 11075822
+West Virginia 321117902
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4} END {for (state in cases) print state, casses[state]}' us-states.csv | sort -k2nr[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C", ca[1@s[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" c[1@a[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,"," [1@c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ","[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[1@,[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-k2nrt-k2nr -k2nr[1P-k2nr"-k2nr,-k2nr"-k2nr -k2nr
+California , 6315141921
+Texas , 4640982014
+Florida , 4065043272
+New York , 3481460364
+Illinois , 2184024652
+Pennsylvania , 1884002397
+Ohio , 1813202197
+North Carolina , 1775818771
+Georgia , 1694478089
+Michigan , 1601347249
+New Jersey , 1577338492
+Arizona , 1364935095
+Tennessee , 1351257576
+Massachusetts , 1165164476
+Virginia , 1160403288
+Indiana , 1153802424
+Wisconsin , 1093914775
+South Carolina , 988262712
+Missouri , 986827551
+Minnesota , 966074812
+Washington , 953581074
+Colorado , 927507759
+Alabama , 895850975
+Kentucky , 873479809
+Louisiana , 849484676
+Maryland , 722342631
+Oklahoma , 708629274
+Utah , 626051174
+Arkansas , 564075918
+Mississippi , 545333974
+Iowa , 533816276
+Connecticut , 521290817
+Kansas , 517178450
+Nevada , 502276914
+Oregon , 463805540
+Puerto Rico , 447674423
+New Mexico , 351256116
+Nebraska , 328002597
+West Virginia , 321117902
+Idaho , 299664100
+Rhode Island , 244243050
+New Hampshire , 190247767
+Montana , 182999837
+Delaware , 176542579
+South Dakota , 167555386
+North Dakota , 165191218
+Alaska , 156619480
+Hawaii , 155169144
+Maine , 148235786
+Wyoming , 104068492
+District of Columbia , 92781319
+Vermont , 70151935
+Guam , 29032671
+Virgin Islands , 11075822
+Northern Mariana Islands , 5332866
+American Samoa , 2704294
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4} END {for (state in cases) print state, ","", cases[state]}' us-states.csv | sort -t"," -k2nr[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C",",[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C",", [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C c[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cca[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+California,6315141921
+Texas,4640982014
+Florida,4065043272
+New York,3481460364
+Illinois,2184024652
+Pennsylvania,1884002397
+Ohio,1813202197
+North Carolina,1775818771
+Georgia,1694478089
+Michigan,1601347249
+New Jersey,1577338492
+Arizona,1364935095
+Tennessee,1351257576
+Massachusetts,1165164476
+Virginia,1160403288
+Indiana,1153802424
+Wisconsin,1093914775
+South Carolina,988262712
+Missouri,986827551
+Minnesota,966074812
+Washington,953581074
+Colorado,927507759
+Alabama,895850975
+Kentucky,873479809
+Louisiana,849484676
+Maryland,722342631
+Oklahoma,708629274
+Utah,626051174
+Arkansas,564075918
+Mississippi,545333974
+Iowa,533816276
+Connecticut,521290817
+Kansas,517178450
+Nevada,502276914
+Oregon,463805540
+Puerto Rico,447674423
+New Mexico,351256116
+Nebraska,328002597
+West Virginia,321117902
+Idaho,299664100
+Rhode Island,244243050
+New Hampshire,190247767
+Montana,182999837
+Delaware,176542579
+South Dakota,167555386
+North Dakota,165191218
+Alaska,156619480
+Hawaii,155169144
+Maine,148235786
+Wyoming,104068492
+District of Columbia,92781319
+Vermont,70151935
+Guam,29032671
+Virgin Islands,11075822
+Northern Mariana Islands,5332866
+American Samoa,2704294
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4} END {for (state in cases) print state","caases[state]}' us-states.csv | sort -t"," -k2nr > state_[K-nim[K[Kumberof[K[Kofcase.txt
+bash-4.4$ awk -F, 'NR>1{cases[$2]+=$4} END {for (state in cases) print state","caases[state]}' us-states.csv | sort -t"," -k2nr > state-numberofcase.txt[C[1Pe.txt[1Pe.txt[1Pe.txt[1P.txtd.txte.txta.txtt.txth.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C} END {for (state in cases) print state","cas[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5} END {for (state in cases) print state","ca[1@s[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+bash-4.4$ cat state0[K-number of[K[K[Kofdeath.txt 
+California,67503932
+Texas,62871518
+New York,59061061
+Florida,52694427
+Pennsylvania,32653246
+Illinois,28833752
+New Jersey,28482863
+Michigan,26110438
+Georgia,25872159
+Ohio,25744838
+Arizona,21257570
+Massachusetts,18434286
+North Carolina,17314387
+Tennessee,17188151
+Indiana,16853649
+Virginia,14102858
+Missouri,13875907
+Alabama,13758382
+Louisiana,13259185
+South Carolina,12543645
+Maryland,11055992
+Kentucky,10223505
+Wisconsin,10004696
+Oklahoma,9457851
+Minnesota,9306987
+Mississippi,9103032
+Connecticut,9082510
+Colorado,8976123
+Washington,8960697
+Arkansas,7905784
+Nevada,7437941
+Iowa,6953414
+Kansas,6182474
+New Mexico,5393922
+Oregon,4865473
+West Virginia,4434127
+Idaho,3264273
+Puerto Rico,3223949
+Utah,3194695
+Nebraska,3034055
+Rhode Island,2855775
+Montana,2246802
+South Dakota,2159513
+Delaware,2113929
+New Hampshire,1777416
+North Dakota,1729703
+Maine,1464390
+Wyoming,1164870
+District of Columbia,1160633
+Hawaii,945585
+Alaska,747325
+Vermont,434397
+Guam,239558
+Virgin Islands,72839
+Northern Mariana Islands,17462
+American Samoa,11048
+bash-4.4$ a[Kvim monthsplit.awk
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"monthsplit.awk" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H0,0-1[9CAll[1;1H[?25h[?25l[24;53Hi[1;1H[24;53H [1;1H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H0,1[11CAll[1;1H[?25h[?25l[35mBEGIN[m {[35mFS[m [35m=[m [31m","[m[35m;[m [35mOFS[m [35m=[m [31m","[m}   [34m# set the input and output f[?25h[?25lield separators to comm[2;1Hma[m[2;3H[K[3;1H[K[3;1H[?25h[?25l[35mNR[m > [31m1[m {[21C[34m# skip the header[m
+    spli[4;9H[K[4;9H[?25h[?25l[36msplit[m([35m$1,[m date[35m,[m [31m"-"[m)     [34m# split the date column into year, mo[?25h[?25lnth, and day[m
+    month [35m=[m date[[35m1[m] [31m"-"[m date[[35m2[m]   [34m# concatenat[m[5;47H[K[5;47H[?25h[?25l[34me year and month with a hyphen[m
+    cases[[35mmonth[m] [35m+=[m [35m$4[m       [34m#[m[6;31H[K[6;31H[?25h[?25l[34m add the number of cases to the corresponding montt[7;1Hh[m[7;2H[K[8;1H    death[8;10H[K[8;10H[?25h[?25ls[[35mmonth[m] [35m+=[m [35m$5[m      [34m# add the number of deaths to the correspo[?25h[?25lnding monn[9;1Hth[m[9;3H[K[10;1H}[10;2H[K[11;1H[35mEND[m {[11;6H[K[12;1H    [33mprint[m [31m"month,cases,deaths"[m   [34m# print t[m[12;43H[K[12;43H[?25h[?25l[34mhe header[m
+    [33mfor[m (month [35min[m cases) {[13;27H[K[14;1H        [33mprint[m month[35m,[m cases[14;27H[K[14;27H[?25h[?25l[[35mmonth[m][35m,[m deaths[[35mmonth[m]   [34m# print the month, number of  [15;1Hcases, an[m[15;10H[K[15;10H[?25h[?25l[34md number of deaths[m
+    }[16;6H[K[17;1H}[17;2H[K[18;1H[K[24;63H14,1[18;1H[?25h[?25l[35m:[m[24;66H2[18;2H[?25h[?25lw[24;66H3[18;3H[?25h[?25lq[24;66H4[18;4H[?25h[?25l[18;3H[K[24;66H3[18;3H[?25h[?25l[18;2H[K[24;66H2[18;2H[?25h[?25l[18;1H[K[24;66H1[18;1H[?25h[?25l[1m[34m~                                                                               [m[11;5H[46m{[17;1H}[m[24;64H3,2[17;2H[?25h[24;1H[K[17;1H[?25l[24;53H^[[17;1H[24;53H  [17;2H[24;63H13,1[10CAll[17;1H[?25h[?25l[24;53H:[17;1H[24;53H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"monthsplit.awk" [New] 13L, 654C written
+[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ v[Kawk -f monthsplit.awk us-states.csv 
+month,cases,deaths
+2020-10,252794114,6774225
+2020-11,338932078,7449571
+2020-12,525970605,9537613
+2023-01,3143452912,34347507
+2023-02,2875545451,31409825
+2023-03,2382352552,26033506
+2022-01,2037666117,26440378
+2022-02,2173725838,25818487
+2022-03,2465286532,29979138
+2022-04,2416616245,29590230
+2022-05,2562588439,30962760
+2022-06,2575997226,30273554
+2022-07,2769305619,31631120
+2022-08,2879851473,32068656
+2022-09,2859276626,31456814
+2021-01,729984096,12216246
+2021-02,773617710,13511297
+2021-03,916857453,16598944
+2021-04,944997168,16938795
+2021-05,1020501942,18153720
+2021-06,1003878600,18001792
+2021-07,1059339596,18857887
+2021-08,1148978762,19355736
+2021-09,1247666206,20063233
+2020-01,41,0
+2020-02,736,1
+2020-03,1095533,20322
+2020-04,19611708,990492
+2020-05,45452114,2695258
+2020-06,65288844,3498954
+2020-07,111626136,4307836
+2020-08,166758528,5259820
+2020-09,199758786,5879775
+2022-10,2997886391,32891566
+2022-11,2936454873,32390260
+2022-12,3085428799,33924295
+2021-10,1390097002,22446279
+2021-11,1417533896,22952318
+2021-12,1575677425,24890789
+bash-4.4$ awk -f monthsplit.awk us-states.csv | sort -t.[K,,[K[K"," -k1
+2020-01,41,0
+2020-02,736,1
+2020-03,1095533,20322
+2020-04,19611708,990492
+2020-05,45452114,2695258
+2020-06,65288844,3498954
+2020-07,111626136,4307836
+2020-08,166758528,5259820
+2020-09,199758786,5879775
+2020-10,252794114,6774225
+2020-11,338932078,7449571
+2020-12,525970605,9537613
+2021-01,729984096,12216246
+2021-02,773617710,13511297
+2021-03,916857453,16598944
+2021-04,944997168,16938795
+2021-05,1020501942,18153720
+2021-06,1003878600,18001792
+2021-07,1059339596,18857887
+2021-08,1148978762,19355736
+2021-09,1247666206,20063233
+2021-10,1390097002,22446279
+2021-11,1417533896,22952318
+2021-12,1575677425,24890789
+2022-01,2037666117,26440378
+2022-02,2173725838,25818487
+2022-03,2465286532,29979138
+2022-04,2416616245,29590230
+2022-05,2562588439,30962760
+2022-06,2575997226,30273554
+2022-07,2769305619,31631120
+2022-08,2879851473,32068656
+2022-09,2859276626,31456814
+2022-10,2997886391,32891566
+2022-11,2936454873,32390260
+2022-12,3085428799,33924295
+2023-01,3143452912,34347507
+2023-02,2875545451,31409825
+2023-03,2382352552,26033506
+month,cases,deaths
+bash-4.4$ awk -f monthsplit.awk us-states.csv | sort -t"," -k1[K[C[C[C[C[C[C[C[C[C[C[18Pvim monthsplit.awk[C[C[C[C[C[C[C[C[C[Ccat state-numberofdeath.txt [C[C[C[C[C[C[C[C[C[Cawk -F, 'NR>1{cases[$2]+=$5} END {for (state in cases) print state","caases[state]}' us-states.csv | sort -t"," -k2nr > state-numberofdeath.txt[A[C[C[C[C[C[C[C[C[C[C[42Pcat state-numberofdeath.txt 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pvim monthsplit.awk
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"monthsplit.awk" 13L, 654C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35mBEGIN[m {[35mFS[m [35m=[m [31m","[m[35m;[m [35mOFS[m [35m=[m [31m","[m}   [34m# set the input and output field separators to comm[2;1Hma[m
+[35mNR[m > [31m1[m {[21C[34m# skip the header[m
+    [36msplit[m([35m$1,[m date[35m,[m [31m"-"[m)     [34m# split the date column into year, month, and day[m
+    month [35m=[m date[[35m1[m] [31m"-"[m date[[35m2[m]   [34m# concatenate year and month with a hyphen[m
+    cases[[35mmonth[m] [35m+=[m [35m$4[m[7C[34m# add the number of cases to the corresponding montt[7;1Hh[m
+    deaths[[35mmonth[m] [35m+=[m [35m$5[m      [34m# add the number of deaths to the corresponding monn[9;1Hth[m
+}
+[35mEND[m [46m{[m
+    [33mprint[m [31m"month,cases,deaths"[m   [34m# print the header[m
+    [33mfor[m (month [35min[m cases) {[14;9H[33mprint[m month[35m,[m cases[[35mmonth[m][35m,[m deaths[[35mmonth[m]   [34m# print the month, number of  [15;1Hcases, and number of deaths[m
+    }
+[46m}[m
+[1m[34m~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H13,1[10CAll[17;1H[?25h[?25l[24;53H~@k[17;1H[24;53H   [17;1H[?25h[?25l[24;53H~@k[17;1H[24;53H   [16;1H[11;5H{[17;1H}[24;64H2[16;1H[?25h[?25l[24;53H~@k[16;1H[24;53H   [14;1H[24;64H1[14;1H[?25h[?25l[24;53H~@k[14;1H[24;53H   [13;1H[24;64H0[13;1H[?25h[?25l[24;53H~@k[13;1H[24;53H   [12;1H[24;63H9,1 [12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [11;1H[24;63H8[11;1H[?25h[?25l[24;53H~@k[11;1H[24;53H   [10;1H[3;8H[46m{[10;1H}[m[24;63H7[10;1H[?25h[?25l[24;53H~@k[10;1H[24;53H   [8;1H[3;8H{[10;1H}[24;63H6[8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [10;1H[3;8H[46m{[10;1H}[m[24;63H7[10;1H[?25h[?25l[24;53H~@k[10;1H[24;53H   [11;1H[3;8H{[10;1H}[24;63H8[11;1H[?25h[?25l[24;53H~@k[11;1H[24;53H   [12;1H[24;63H9[12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [12;2H[24;65H2[12;2H[?25h[?25l[24;53H~@k[12;2H[24;53H   [12;3H[24;65H3[12;3H[?25h[?25l[24;53H~@k[12;3H[24;53H   [12;4H[24;65H4[12;4H[?25h[?25l[24;53H~@k[12;4H[24;53H   [12;5H[24;65H5[12;5H[?25h[?25l[24;53Hi[12;5H[24;53H [12;5H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H9,5[11CAll[12;5H[?25h[?25l[34m#print "month,cases,deaths"   # print the header[m[24;65H6[12;6H[?25h[24;1H[K[12;5H[?25l[24;53H^[[12;5H[24;53H  [12;6H[24;63H9,5[11CAll[12;5H[?25h[?25l[24;53H:[12;5H[24;53H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"monthsplit.awk" 13L, 655C written
+[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ vim monthsplit.awk[C[C[C[C[C[C[C[C[C[Cawk -f monthsplit.awk us-states.csv | sort -t"," -k1
+2020-01,41,0
+2020-02,736,1
+2020-03,1095533,20322
+2020-04,19611708,990492
+2020-05,45452114,2695258
+2020-06,65288844,3498954
+2020-07,111626136,4307836
+2020-08,166758528,5259820
+2020-09,199758786,5879775
+2020-10,252794114,6774225
+2020-11,338932078,7449571
+2020-12,525970605,9537613
+2021-01,729984096,12216246
+2021-02,773617710,13511297
+2021-03,916857453,16598944
+2021-04,944997168,16938795
+2021-05,1020501942,18153720
+2021-06,1003878600,18001792
+2021-07,1059339596,18857887
+2021-08,1148978762,19355736
+2021-09,1247666206,20063233
+2021-10,1390097002,22446279
+2021-11,1417533896,22952318
+2021-12,1575677425,24890789
+2022-01,2037666117,26440378
+2022-02,2173725838,25818487
+2022-03,2465286532,29979138
+2022-04,2416616245,29590230
+2022-05,2562588439,30962760
+2022-06,2575997226,30273554
+2022-07,2769305619,31631120
+2022-08,2879851473,32068656
+2022-09,2859276626,31456814
+2022-10,2997886391,32891566
+2022-11,2936454873,32390260
+2022-12,3085428799,33924295
+2023-01,3143452912,34347507
+2023-02,2875545451,31409825
+2023-03,2382352552,26033506
+bash-4.4$ awk -f monthsplit.awk us-states.csv | sort -t"," -k1[C[C[C[C[C[C[C[C[C[C[34Pvim monthsplit.awk[C[C[C[C[C[C[C[C[C[Cawk -f monthsplit.awk us-states.csv | sort -t"," -k1[K[C[C[C[C[C[C[C[C[C[C[18Pvim monthsplit.awk[C[C[C[C[C[C[C[C[C[Cawk -f monthsplit.awk us-states.csv [C[C[C[C[C[C[C[C[C[C[18Pvim monthsplit.awk
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"monthsplit.awk" 13L, 655C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35mBEGIN[m {[35mFS[m [35m=[m [31m","[m[35m;[m [35mOFS[m [35m=[m [31m","[m}   [34m# set the input and output field separators to comm[2;1Hma[m
+[35mNR[m > [31m1[m {[21C[34m# skip the header[m
+    [36msplit[m([35m$1,[m date[35m,[m [31m"-"[m)     [34m# split the date column into year, month, and day[m
+    month [35m=[m date[[35m1[m] [31m"-"[m date[[35m2[m]   [34m# concatenate year and month with a hyphen[m
+    cases[[35mmonth[m] [35m+=[m [35m$4[m[7C[34m# add the number of cases to the corresponding montt[7;1Hh[m
+    deaths[[35mmonth[m] [35m+=[m [35m$5[m      [34m# add the number of deaths to the corresponding monn[9;1Hth[m
+}
+[35mEND[m {
+    [34m#print "month,cases,deaths"   # print the header[m
+    [33mfor[m (month [35min[m cases) {[14;9H[33mprint[m month[35m,[m cases[[35mmonth[m][35m,[m deaths[[35mmonth[m]   [34m# print the month, number of  [15;1Hcases, and number of deaths[m
+    }
+}
+[1m[34m~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H9,5[11CAll[12;5H[?25h[?25l[24;53H^[[12;5H[24;53H  [12;5H[24;53H^[[12;5H[24;53H  [12;5H[?25h[?25l[24;53H:[12;5H[24;1H[K[24;1H:[?2004h[?25hq[?25l[?25h[?25l[?2004l[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tbash-4.4$ vim monthsplit.awk[C[C[C[C[C[C[C[C[C[Cawk -f monthsplit.awk us-states.csv | sort -t"," -k1 > mothtrend[K[K[K[K[K[K[KnthlyTrebd[K[Knd.tx t
+bash-4.4$ use gunplot for [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kawk -F, 'NR>1{print $1,$4,$5}' <filename>.csv > plot_data.txt
+bash: filename: No such file or directory
+bash-4.4$ awk -F, 'NR>1{print $1,$4,$5}' <filename>.csv > plot_data.txt[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@u[1@s[1@-[1@s[9@tates.csv[C[C
+bash-4.4$ plot
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> set title "COVID-19 Cases and Deaths in the US"
+gnuplot> set xlabel "Date"
+gnuplot> set ylabel "Number of Cases/Deaths"
+gnuplot> set xdata time
+gnuplot> set timefmt "%Y-%m-%d"
+gnuplot> set format x "%b %Y"
+gnuplot> set key autotitle columnheader
+gnuplot> set grid
+gnuplot> plot "plot_data.txt" using 1:2 with lines title "Cases", "" using 1:3 with lines title "Deaths"
+WARNING: Plotting with an 'unknown' terminal.
+No output will be generated. Please select a terminal with 'set terminal'.
+gnuplot> set term png
+
+Terminal type is now 'unknown'
+                  ^
+         unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+gnuplot> set output "covid_plot.png"
+gnuplot> replot
+WARNING: Plotting with an 'unknown' terminal.
+No output will be generated. Please select a terminal with 'set terminal'.
+gnuplot> set term png
+
+Terminal type is now 'unknown'
+                  ^
+         unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+gnuplot> set terminal png
+
+Terminal type is now 'unknown'
+                      ^
+         unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+gnuplot> set terminal png
+
+Terminal type is now 'unknown'
+                      ^
+         unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+gnuplot> 
+gnuplot> exit
+bash-4.4$ plot
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> Terminal type is now 'unknown'
+         ^
+         invalid command
+
+gnuplot>                       ^
+         ^
+         invalid command
+
+gnuplot>          unknown or ambiguous terminal type; type just 'set terminal' for a list                                                                                                                                                                set terminial png
+             ^
+         unrecognized option - see 'help set'.
+
+gnuplot> gnuplot> gnuplot> set terminial pnggnuplot>                  gnuplot>                       ^gnuplot>                        gnuplot> Terminal type is now 'unknown'gnuplot>                               gnuplot> exitgnuplot>     gnuplot> set terminal pngal png   png   png   png  
+
+Terminal type is now 'unknown'
+                  ^
+         unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+gnuplot> exit
+bash-4.4$ plt [K[K[Klot
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> set title "COVID-19 Cases and Deaths in the US"
+gnuplot> set xlabel "Date"
+gnuplot> set ylabel "Number of Cases/Deaths"
+gnuplot> set xdata time
+gnuplot> set timefmt "%Y-%m-%d"
+gnuplot> set format x "%b %Y"
+gnuplot> set key autotitle columnheader
+gnuplot> set grid
+gnuplot> plot "plot_data.txt" using 1:2 with lines title "Cases", "" using 1:3 with lines title "Deaths"
+WARNING: Plotting with an 'unknown' terminal.
+No output will be generated. Please select a terminal with 'set terminal'.
+gnuplot> set terminal png
+
+Terminal type is now 'unknown'
+                      ^
+         unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+gnuplot> set term qt
+
+Terminal type is now 'unknown'
+                  ^
+         unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+gnuplot> set terminal svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set terminal png size 800,600
+
+Terminal type is now 'unknown'
+                      ^
+         unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+gnuplot> set terminal svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'cases_and_deaths.svg'
+gnuplot> set datafile separator ","
+gnuplot> datafile = "data.csv"ata.csv"  ta.csv"  a.csv"  .csv"  u.csv"  s.csv"  -.csv"  s.csv"  t.csv"  a.csv"  t.csv"  e.csv"  s.csv"  
+gnuplot> date_col = 1
+gnuplot> cases_col = 4
+gnuplot> deaths_col = 5
+gnuplot> plot datafile using date_col:cases_col title "Cases" with lines, \
+>     datafile using date_col:deaths_col title "Deaths" with lines
+gnuplot> exit
+bash-4.4$ cd ~[K[K[K[Kls ~/
+ amazon_reviews_us_Books_v1_02.tsv   index.html.1   result.txt
+ cal				     index.html.2   samplef.txt
+ cs131				     index.html.3   sedscr_append
+ err.txt			     local.sh	    source
+ getlineno.sh			     long.sh	    test
+ gnuplot-5.4.6			     marks.txt	    test1.sh
+ gnuplot-5.4.6.tar		     maxmin	    test.sh
+ hello				     mypipe	    time.txt
+'hereever thye are'		     number.txt     users.lst
+ index.html			     out.txt	    users.txt
+bash-4.4$ cd gu[K[K![K~/gnuplot-5.4.6
+bash-4.4$ ls
+ aclocal.m4	 configure	 INSTALL       missing	       share
+'binwidth=1'	 configure.ac	 INSTALL.gnu   mkinstalldirs   src
+ BUGS		 configure.vms	 install-sh    NEWS	       stamp-h
+ compile	 Copyright	 ls	       PATCHLEVEL      stamp-h1
+ config		 demo		 m4	       PGPKEYS	       term
+ config.h	 depcomp	 Makefile      pwd	       win
+ config.hin	 docs		 Makefile.am   README
+ config.log	 exit		 Makefile.in   RELEASE_NOTES
+ config.status	 FAQ.pdf	 man	       set
+bash-4.4$ ls src
+alloc.c      eval.h	  internal.h	    plot3d.c	tables.h
+alloc.h      eval.o	  internal.o	    plot3d.h	tables.o
+alloc.o      external.c   interpol.c	    plot3d.o	tabulate.c
+axis.c	     external.h   interpol.h	    plot.c	tabulate.h
+axis.h	     external.o   interpol.o	    plot.h	tabulate.o
+axis.o	     fit.c	  jitter.c	    plot.o	term_api.h
+beos	     fit.h	  jitter.h	    pm3d.c	term.c
+bf_test      fit.o	  jitter.o	    pm3d.h	term.h
+bf_test.c    gadgets.c	  libcerf.c	    pm3d.o	term.o
+bf_test.o    gadgets.h	  libcerf.h	    qt_table.h	time.c
+bitmap.c     gadgets.o	  libcerf.o	    qtterminal	time.o
+bitmap.h     genopt.com   linkopt.vms	    readline.c	unset.c
+boundary.c   getcolor.c   Makefile	    readline.h	unset.o
+boundary.h   getcolor.h   makefile.all	    readline.o	util3d.c
+boundary.o   getcolor.o   Makefile.am	    save.c	util3d.h
+breaders.c   GNUmakefile  makefile.awc	    save.h	util3

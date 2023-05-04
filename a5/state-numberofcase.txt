@@ -1,0 +1,56 @@
+California,6315141921
+Texas,4640982014
+Florida,4065043272
+New York,3481460364
+Illinois,2184024652
+Pennsylvania,1884002397
+Ohio,1813202197
+North Carolina,1775818771
+Georgia,1694478089
+Michigan,1601347249
+New Jersey,1577338492
+Arizona,1364935095
+Tennessee,1351257576
+Massachusetts,1165164476
+Virginia,1160403288
+Indiana,1153802424
+Wisconsin,1093914775
+South Carolina,988262712
+Missouri,986827551
+Minnesota,966074812
+Washington,953581074
+Colorado,927507759
+Alabama,895850975
+Kentucky,873479809
+Louisiana,849484676
+Maryland,722342631
+Oklahoma,708629274
+Utah,626051174
+Arkansas,564075918
+Mississippi,545333974
+Iowa,533816276
+Connecticut,521290817
+Kansas,517178450
+Nevada,502276914
+Oregon,463805540
+Puerto Rico,447674423
+New Mexico,351256116
+Nebraska,328002597
+West Virginia,321117902
+Idaho,299664100
+Rhode Island,244243050
+New Hampshire,190247767
+Montana,182999837
+Delaware,176542579
+South Dakota,167555386
+North Dakota,165191218
+Alaska,156619480
+Hawaii,155169144
+Maine,148235786
+Wyoming,104068492
+District of Columbia,92781319
+Vermont,70151935
+Guam,29032671
+Virgin Islands,11075822
+Northern Mariana Islands,5332866
+American Samoa,2704294
