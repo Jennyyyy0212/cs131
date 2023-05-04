@@ -920,4 +920,348 @@ gnuplot> plot "data.txt" using 1:2 with lines title "Case count", \
          undefined variable: datafile
 
 gnuplot> 
-gnuplot> plot "data.txt" using 1:2 with lines title "Case count",a.txt" using 1:2 with lines title "Case count",  a.txt" using 1:2 with lines title "Case count",  a.txt" using 1:2 with lines title "Case count",  .txt" using 1:2 with lines title "Case count",  m.txt" using 1:2 with lines title "Case count",  o.txt" using 1:2 with lines title "Case count",  t.txt" using 1:2 with lines title "Case count",  h.txt" using 1:2 with lines title "Case count",  T.txt" using 1:2 with lines title "Case count",  r.txt" using 1:2 with lines title "Case count",  e.txt" using 1:2 with lines title "Case count",  n.txt" using 1:2 with lines title "Case count",  d.txt" using 1:2 with lines title "Case count",  onthTrend.txt" using 1:2 with lines title "Case count",  thlTrend.txt" using 1:2 with lines title "Case count",  
+gnuplot> plot "data.txt" using 1:2 with lines title "Case count",a.txt" using 1:2 with lines title "Case count",  a.txt" using 1:2 with lines title "Case count",  a.txt" using 1:2 with lines title "Case count",  .txt" using 1:2 with lines title "Case count",  m.txt" using 1:2 with lines title "Case count",  o.txt" using 1:2 with lines title "Case count",  t.txt" using 1:2 with lines title "Case count",  h.txt" using 1:2 with lines title "Case count",  T.txt" using 1:2 with lines title "Case count",  r.txt" using 1:2 with lines title "Case count",  e.txt" using 1:2 with lines title "Case count",  n.txt" using 1:2 with lines title "Case count",  d.txt" using 1:2 with lines title "Case count",  onthTrend.txt" using 1:2 with lines title "Case count",  thlTrend.txt" using 1:2 with lines title "Case count",  yTrend.txt" using 1:2 with lines title "Case count",  Trend.txt" using 1:2 with lines title "Case count",\
+>     "data.txt" using 1:3 with lines title "Death count".txt" using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  " using 1:3 with lines title "Death count"  m" using 1:3 with lines title "Death count"  o" using 1:3 with lines title "Death count"  n" using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  h" using 1:3 with lines title "Death count"  l" using 1:3 with lines title "Death count"  y" using 1:3 with lines title "Death count"  T" using 1:3 with lines title "Death count"  r" using 1:3 with lines title "Death count"  e" using 1:3 with lines title "Death count"  n" using 1:3 with lines title "Death count"  d" using 1:3 with lines title "Death count"  ." using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  x" using 1:3 with lines title "Death count"  t" using 1:3 with lines title "Death count"  
+gnuplot> exit
+bash-4.4$ ls
+a5.txt		      plot_data.txt	       top_5_states_data.csv
+cases_and_deaths.svg  state-numberofcase.txt   top_5_states.svg
+covid.svg	      state-numberofdeath.txt  us-states.csv
+monthlyTrend.txt      state_totals.csv
+monthsplit.awk	      top_5_states.csv
+bash-4.4$ go[Kit commint[K[K[K[K[K[K[Kadd .
+bash-4.4$ git commin[Kt -m "ass[Kignment5"
+[master 09bd08b] asignment5
+ 7 files changed, 7714 insertions(+), 1 deletion(-)
+ create mode 100644 a5/covid.svg
+ delete mode 100644 a5/covid_plot.png
+ create mode 100644 a5/state_totals.csv
+ create mode 100644 a5/top_5_states.csv
+ create mode 100644 a5/top_5_states.svg
+ create mode 100644 a5/top_5_states_data.csv
+bash-4.4$ git commit -m "asignment5"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K push origin master
+Username for 'https://github.com': Jennyyyy0212
+Password for 'https://Jennyyyy0212@github.com': 
+Enumerating objects: 12, done.
+Counting objects:   8% (1/12)Counting objects:  16% (2/12)Counting objects:  25% (3/12)Counting objects:  33% (4/12)Counting objects:  41% (5/12)Counting objects:  50% (6/12)Counting objects:  58% (7/12)Counting objects:  66% (8/12)Counting objects:  75% (9/12)Counting objects:  83% (10/12)Counting objects:  91% (11/12)Counting objects: 100% (12/12)Counting objects: 100% (12/12), done.
+Delta compression using up to 256 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  11% (1/9)Writing objects:  22% (2/9)Writing objects:  33% (3/9)Writing objects:  44% (4/9)Writing objects:  66% (6/9)Writing objects:  77% (7/9)Writing objects:  88% (8/9)Writing objects: 100% (9/9)Writing objects: 100% (9/9), 77.10 KiB | 3.67 MiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 3 local objects.[K
+To https://github.com/Jennyyyy0212/cs131.git
+   c6c1637..09bd08b  master -> master
+bash-4.4$ gnuplot [K[K[K[K[K[K[K[Kplot
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> set terminal svg size 800,600
+
+Terminal type is now 'svg'
+Options are 'size 800,600 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output "top5_cases.svg"
+gnuplot> set title "Top 5 States with Highest Number of COVID-19 Cases"
+gnuplot> set xlabel "Date"
+gnuplot> set ylabel "Number of Cases"
+gnuplot> set style line 1 lc rgb '#1f77b4' lw 2
+gnuplot> set style line 2 lc rgb '#ff7f0e' lw 2
+gnuplot> set style line 3 lc rgb '#2ca02c' lw 2
+gnuplot> set style line 4 lc rgb '#d62728' lw 2
+gnuplot> set style line 5 lc rgb '#9467bd' lw 2
+gnuplot> plot "top_5_states_data.csv" using 1:4 index 0 with lines title columnheader(2) ls 1, \
+>     "top_5_states_data.csv" using 1:4 index 1 with lines title columnheader(2) ls 2, \
+>     "top_5_states_data.csv" using 1:4 index 2 with lines title columnheader(2) ls 3, \
+>     "top_5_states_data.csv" using 1:4 index 3 with lines title columnheader(2) ls 4, \
+>     "top_5_states_data.csv" using 1:4 index 4 with lines title columnheader(2) ls 5
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^
+         x range is invalid
+
+gnuplot> 
+gnuplot> set terminal svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'top_5_states_cases.svg'
+gnuplot> set title 'Top 5 States with the Highest Number of COVID-19 Cases'
+gnuplot> set style line 1 lc rgb '#e41a1c' lw 2
+gnuplot> set style line 2 lc rgb '#377eb8' lw 2
+gnuplot> set style line 3 lc rgb '#4daf4a' lw 2
+gnuplot> set style line 4 lc rgb '#984ea3' lw 2
+gnuplot> set style line 5 lc rgb '#ff7f00' lw 2
+gnuplot> set xlabel 'Date'
+gnuplot> set ylabel 'Number of Cases'
+gnuplot> set xdata time
+gnuplot> set timefmt '%Y-%m-%d'
+gnuplot> set format x '%Y-%m'
+gnuplot> datafile = 'top_5_states_data.csv'
+gnuplot> states = '"California"' ', ' \
+>         '"Texas"' ', ' \
+>         '"Florida"' ', ' \
+>         '"New York"' ', ' \
+>         '"Pennsylvania"'
+                                 ^
+         unexpected or unrecognized token: ', '
+
+gnuplot> 
+gnuplot> states = "California Texas Florida New York Pennsylvania"
+gnuplot> plot for [state in states] sprintf("top_5_states_data.csv") u 1:(strcol(4)  * (word(states, state) eq state) ) title state with lines
+         internal error : non-INTGR argument
+
+gnuplot> plot for [state in states] datafile using 1:($2*(strcol(2) eq state)) with lines title state ls (state eq '"California"' ? 1 : state eq '"Texas"' ? 2 : state eq '"Florida"' ? 3 : state eq '"New York"' ? 4 : state eq '"Pennsylvania"' ? 5 : 0)
+                                                                                                                                                                                                                                                          ^
+         all points y value undefined!
+
+gnuplot> set terminal svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'top_5_states_cases.svg'
+gnuplot> set xlabel 'Date'
+gnuplot> set ylabel 'Cases'
+gnuplot> set title 'Top 5 States with the Highest Number of Cases Over Time'
+gnuplot> 
+gnuplot> set xrange ['2020-01-01':'2021-01-01']
+gnuplot> set yrange [0:]"  
+gnuplot> plot 'top_5_states_data.csv' using 1:($2) title 'State1' with lines, \
+>     '' using 1:($3) title 'State2' with lines, \
+     '' using 1:($5) title 'State4' with lines, \
+>     '' using 1:($4) title 'State3' with lines, \
+>     '' using 1:($5) title 'State4' with lines, \
+>     '' using 1:($6) title 'State5' with lines
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+                                                                                                                                                                                                                                                                            ^
+         all points y value undefined!
+
+gnuplot>  all points y value undefined!
+         ^
+         invalid command
+
+gnuplot> 
+gnuplot> plot 'top_5_states_data.csv' using 1:($2) title 'California' with lines, \
+>     '' using 1:($3) title 'Illinois' with lines, \
+>     '' using 1:($4) title 'Texas' with lines, \
+>     '' using 1:($5) title 'New York' with lines, \
+>     '' using 1:($6) title 'Florida' with lines
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+                                                                                                                                                                                                                                                                                    ^
+         all points y value undefined!
+
+gnuplot> set terminal svg size 800,600
+
+Terminal type is now 'svg'
+Options are 'size 800,600 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'top_5_states_cases.svg'
+gnuplot> set xdata time
+gnuplot> set timefmt '%Y-%m-%d'
+gnuplot> set format x '%b\n%Y'
+gnuplot> set xlabel 'Date'
+gnuplot> set ylabel 'Cases'
+gnuplot> set title 'Top 5 States with the Highest Number of COVID Cases over Time'
+gnuplot> plot 'top_5_states_data.csv' using 1:4 title 'California' with lines, \
+>     '' using 1:4 title 'Illinois' with lines, \
+>     '' using 1:4 title 'New York' with lines, \
+>     '' using 1:4 title 'Texas' with lines, \
+>     '' using 1:4 title 'Florida' with lines
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+                                                                                                                                                                                                                                                                     ^
+         all points y value undefined!
+
+gnuplot> set terminal svg size 800,600
+
+Terminal type is now 'svg'
+Options are 'size 800,600 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output "top_5_states_cases.svg"
+gnuplot> set key autotitle columnhead
+gnuplot> set xdata time
+gnuplot> set timefmt "%Y-%m-%d"
+gnuplot> set format x "%b %y"
+gnuplot> set xlabel "Date"
+gnuplot> set ylabel "Number of Cases"
+gnuplot> set title "Top 5 States with Highest Number of Cases"
+gnuplot> set datafile separator "\t"
+gnuplot> 
+gnuplot> plot 'top_5_states_data.csv' using 1:4 title "California" with lines, \
+>     '' using 1:4 title "Florida" with lines, \
+>     '' using 1:4 title "New York" with lines, \
+>     '' using 1:4 title "Texas" with lines, \
+>     '' using 1:4 title "Illinois" with lines
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+                                                                                                                                                                                                                                                                     ^
+         all points y value undefined!
+
+gnuplot> 
+gnuplot> plot 'top_5_states_data.csv' using 2:4 title 'California' with lines, \
+>     '' using 2:4 title 'Illinois' with lines, \
+>     '' using 2:4 title 'New York' with lines, \
+>     '' using 2:4 title 'Texas' with lines, \
+>     '' using 2:4 title 'Florida' with lines
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+                                                                                                                                                                                                                                                                     ^
+         all points y value undefined!
+
+gnuplot> exit
+bash-4.4$ plotgit push origin master[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "asignment5"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[Kls[K
+a5.txt		      plot_data.txt	       top_5_states_cases.svg
+cases_and_deaths.svg  state-numberofcase.txt   top_5_states.csv
+covid.svg	      state-numberofdeath.txt  top_5_states_data.csv
+monthlyTrend.txt      state_totals.csv	       top_5_states.svg
+monthsplit.awk	      top5_cases.svg	       us-states.csv
+bash-4.4$ head -n 10 state_totals.csv 
+California,6315141921,67503932
+Texas,4640982014,62871518
+Florida,4065043272,52694427
+New York,3481460364,59061061
+Illinois,2184024652,28833752
+Pennsylvania,1884002397,32653246
+Ohio,1813202197,25744838
+North Carolina,1775818771,17314387
+Georgia,1694478089,25872159
+Michigan,1601347249,26110438
+bash-4.4$ gnuplot -e "set datafile separator ','; set terminal png size 800,600;  set output 'state_totals.png'; set title 'Total COVID-19 Cases and Deaths by Staate'; set ylabel 'Total Cases/Deaths'; set style data histograms; set style histoogram cluster gap 1; set style fill solid border -1; plot 'state_totals_sum.csv'  using 2:xticlabels(1) title 'Total Cases', '' using 3 title 'Total Deaths'"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm.csv' u[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm.csv' us[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm.csv' usi[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.csv' usin[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+
+
+bash: gnuplot: command not found
+bash-4.4$ plot
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> set terminal svg size 800,600
+
+Terminal type is now 'svg'
+Options are 'size 800,600 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'bar_chart.svg'
+gnuplot> 
+gnuplot> set style data histograms
+gnuplot> set style histogram rowstacked
+gnuplot> set boxwidth 0.75 relative
+gnuplot> set style fill solid border -1
+gnuplot> set yrange [0:*]
+gnuplot> 
+gnuplot> set xlabel "State"
+gnuplot> set ylabel "Number of Cases/Deaths"
+gnuplot> set title "Total Number of Cases and Deaths by State"
+gnuplot> plot 'data.csv' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'v' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  v' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  v' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  v' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  v' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  v' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  v' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  ' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  s' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  t' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  a' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  t' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  e' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  _' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  t' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  o' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  t' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  a' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  l' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  s' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  .' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  c' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  s' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  v' using 2:xtic(1) title 'Cases', '' using 3 title 'Deaths'  
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+                                                                                         ^
+         x range is invalid
+
+gnuplot> exit
+bash-4.4$ e[Kc[Khead-10[K[K [K[K n[K-n 10 c[Kstate_totals.csv 
+California,6315141921,67503932
+Texas,4640982014,62871518
+Florida,4065043272,52694427
+New York,3481460364,59061061
+Illinois,2184024652,28833752
+Pennsylvania,1884002397,32653246
+Ohio,1813202197,25744838
+North Carolina,1775818771,17314387
+Georgia,1694478089,25872159
+Michigan,1601347249,26110438
+bash-4.4$ ^C
+bash-4.4$ plot 'data.csv' using 2:xtic(1) with boxes title "Cases", '' using 3 wiith boxes title "Deaths"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cata.csv' using 2:xtic(1) with boxes title "Cases", '' using 3 wit[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cta.csv' using 2:xtic(1) with boxes title "Cases", '' using 3 with[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca.csv' using 2:xtic(1) with boxes title "Cases", '' using 3 with [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.csv' using 2:xtic(1) with boxes title "Cases", '' using 3 with b[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccsv' using 2:xtic(1) with boxes title "Cases", '' using 3 with bo[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csv' using 2:xtic(1) with boxes title "Cases", '' using 3 with box[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv' using 2:xtic(1) with boxes title "Cases", '' using 3 with boxe[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' using 2:xtic(1) with boxes title "Cases", '' using 3 with boxes[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstate_totals.csv' using 2:xtic(1) with boxes title "Cases", '' u[17@sing 3 with boxes[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstate_totals.csv' using 2:xtic(1) with boxes title "Cases", '' us[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+bash: syntax error near unexpected token `('
+bash-4.4$ plot 'state_totals.csv' using 2:xtic(1) with boxes title "Cases", '' ussing 3 with boxes title "Deaths"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+bash: syntax error near unexpected token `('
+bash-4.4$ ^C
+bash-4.4$ plot
+
+	G N U P L O T
+	Version 5.4 patchlevel 6    last modified 2023-02-09
+
+	Copyright (C) 1986-1993, 1998, 2004, 2007-2023
+	Thomas Williams, Colin Kelley and many others
+
+	gnuplot home:     http://www.gnuplot.info
+	faq, bugs, etc:   type "help FAQ"
+	immediate help:   type "help"  (plot window: hit 'h')
+
+Terminal type is now 'unknown'
+gnuplot> set terminal svg
+
+Terminal type is now 'svg'
+Options are 'size 600,480 fixed enhanced font 'Arial,12' butt dashlength 1.0 '
+gnuplot> set output 'barplot.svg'
+gnuplot> set boxwidth 0.5
+gnuplot> set style fill solid
+gnuplot> set xtic rotate by -45
+gnuplot> set ylabel "Number of Cases/Deaths (in billions)"
+gnuplot>  plot 'state_totals.csv' using 2:xtic(1) with boxes title "Cases", '' using 3 with boxes title "Deaths"
+         warning: Skipping data file with no valid points
+         warning: Skipping data file with no valid points
+                                                                                                               ^
+         x range is invalid
+
+gnuplot> exit
+bash-4.4$ echo "state,cases,deaths" > data.csv
+bash-4.4$ cat original_data.csv >> data.csv
+cat: original_data.csv: No such file or directory
+bash-4.4$ cat o[Kstates[K_total.csv <[K>> data.csv
+cat: state_total.csv: No such file or directory
+bash-4.4$ cat state_total.csv >> data.csv[C[C[C[1@s[1P[C[1@s
+bash-4.4$ cat state_totals.csv >> data.csv[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmv data.vs[K[Kcsv f[Kstate_totals.csv 
+bash-4.4$ ls
+a5.txt		      monthsplit.awk	       top_5_states_cases.svg
+bar_chart.svg	      plot_data.txt	       top_5_states.csv
+barplot.svg	      state-numberofcase.txt   top_5_states_data.csv
+cases_and_deaths.svg  state-numberofdeath.txt  top_5_states.svg
+covid.svg	      state_totals.csv	       us-states.csv
+monthlyTrend.txt      top5_cases.svg
+bash-4.4$ mv barplot.svg 
+mv: missing destination file operand after 'barplot.svg'
+Try 'mv --help' for more information.
+bash-4.4$ mvb[K bar_chart.svg 
+mv: missing destination file operand after 'bar_chart.svg'
+Try 'mv --help' for more information.
+bash-4.4$ mv bar_chart.svg [1P[1P[1@r[1@m
+bash-4.4$ rm bar_chart.svg [C[C[C[C[C[C[C[C[C[Cmv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@r[1@m
+rm: cannot remove 'bar_chart.svg': No such file or directory
+bash-4.4$ rm bar_chart.svg [C[C[C[C[C[C[C[C[C[Cmv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pplo[C[C[C[C[C[C[1P[1P[1@r[1@m
+bash-4.4$ exit
+
+Script done on 2023-05-03 22:20:43-04:00
